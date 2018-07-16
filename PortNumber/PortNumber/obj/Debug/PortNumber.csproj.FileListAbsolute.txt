@@ -1,0 +1,14 @@
+c:\users\hanif\source\repos\PortNumber\PortNumber\bin\Debug\PortNumber.exe.config
+c:\users\hanif\source\repos\PortNumber\PortNumber\bin\Debug\PortNumber.exe
+c:\users\hanif\source\repos\PortNumber\PortNumber\bin\Debug\PortNumber.pdb
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.csprojAssemblyReference.cache
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.Form1.resources
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.Properties.Resources.resources
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.csproj.GenerateResource.cache
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.csproj.CoreCompileInputs.cache
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.exe
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.pdb
+c:\users\hanif\source\repos\PortNumber\PortNumber\bin\Debug\PortNumber.exe.manifest
+c:\users\hanif\source\repos\PortNumber\PortNumber\bin\Debug\PortNumber.application
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.exe.manifest
+c:\users\hanif\source\repos\PortNumber\PortNumber\obj\Debug\PortNumber.application

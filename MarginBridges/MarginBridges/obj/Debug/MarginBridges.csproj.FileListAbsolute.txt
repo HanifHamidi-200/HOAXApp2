@@ -1,0 +1,16 @@
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\bin\Debug\MarginBridges.exe.config
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\bin\Debug\MarginBridges.exe.manifest
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\bin\Debug\MarginBridges.application
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\bin\Debug\MarginBridges.exe
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\bin\Debug\MarginBridges.pdb
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.csprojAssemblyReference.cache
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.Form1.resources
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.fSub1.resources
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.fSub2.resources
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.Properties.Resources.resources
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.csproj.GenerateResource.cache
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.csproj.CoreCompileInputs.cache
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.exe.manifest
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.application
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.exe
+c:\users\hanif\source\repos\MarginBridges\MarginBridges\obj\Debug\MarginBridges.pdb

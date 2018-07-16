@@ -1,0 +1,10 @@
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\bin\Debug\ParametersBox.exe.config
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\bin\Debug\ParametersBox.exe
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\bin\Debug\ParametersBox.pdb
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\obj\Debug\ParametersBox.csprojAssemblyReference.cache
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\obj\Debug\ParametersBox.Form1.resources
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\obj\Debug\ParametersBox.Properties.Resources.resources
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\obj\Debug\ParametersBox.csproj.GenerateResource.cache
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\obj\Debug\ParametersBox.csproj.CoreCompileInputs.cache
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\obj\Debug\ParametersBox.exe
+c:\users\hanif\source\repos\ParametersBox\ParametersBox\obj\Debug\ParametersBox.pdb

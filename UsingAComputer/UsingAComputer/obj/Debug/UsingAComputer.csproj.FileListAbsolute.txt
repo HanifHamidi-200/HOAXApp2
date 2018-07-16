@@ -1,0 +1,10 @@
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\bin\Debug\UsingAComputer.exe.config
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\bin\Debug\UsingAComputer.exe
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\bin\Debug\UsingAComputer.pdb
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\obj\Debug\UsingAComputer.csprojAssemblyReference.cache
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\obj\Debug\UsingAComputer.Form1.resources
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\obj\Debug\UsingAComputer.Properties.Resources.resources
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\obj\Debug\UsingAComputer.csproj.GenerateResource.cache
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\obj\Debug\UsingAComputer.csproj.CoreCompileInputs.cache
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\obj\Debug\UsingAComputer.exe
+c:\users\hanif\source\repos\UsingAComputer\UsingAComputer\obj\Debug\UsingAComputer.pdb

@@ -1,0 +1,14 @@
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\bin\Debug\ProvocationsAre.exe.config
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\bin\Debug\ProvocationsAre.exe
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\bin\Debug\ProvocationsAre.pdb
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.Form1.resources
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.Properties.Resources.resources
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.exe
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.pdb
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\bin\Debug\ProvocationsAre.exe.manifest
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\bin\Debug\ProvocationsAre.application
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.exe.manifest
+C:\Users\hanif\source\repos\ProvocationsAre\ProvocationsAre\obj\Debug\ProvocationsAre.application

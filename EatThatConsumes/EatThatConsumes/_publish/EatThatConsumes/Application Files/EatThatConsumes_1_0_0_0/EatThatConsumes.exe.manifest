@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="EatThatConsumes.exe" version="1.0.0.0" publicKeyToken="40e66218d650533f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="EatThatConsumes" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="EatThatConsumes.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EatThatConsumes.exe" size="11744">
+      <assemblyIdentity name="EatThatConsumes" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cCPlxelVsCTDWZ8jsqBBP+O7PKVIAgHLXEQ2oltRdDY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="EatThatConsumes.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="5066d238c6735a2f469d10ebb6b30e2aa47a1885" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>l7EmdhrRNw8D+vhB0obxcEo1eUGVdmazIYL1BkIy2Ao=</DigestValue></Reference></SignedInfo><SignatureValue>lBHMPsyqA7KEk4OaZyjpGzUCx1Qa5dH2ipKehMebR/tXFyUiYomgCjKWtFCujOeEYWP5hBflSGof3VyEhPccRmVFZyl69EfSe0Rf8CbHThGFZ2ZItGC9r8+v9in7PBqSxBnMD1NEcJBjRAOxIprRa85flYODFMQ6Iyf1qnVdalY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wtjeNGoSvmzC9qt9Pvxbfqs8cT7OvP0DYGL7A/BNkydxeCRN60vQdJBA6c0ISkBIzX2EJChfU66HMUjNMOhUFFvaimLEfNO7bPAiPwRka53ok5gfLlL/GtcW+EImPNRCWWSH83dCBqNJEQDk/YyZfw2eLf5lguoOFz03KRZSbQE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0ad8324206f58221b36676954179354a70f186d241f8fa030f37d11a7626b197" Description="" Url=""><as:assemblyIdentity name="EatThatConsumes.exe" version="1.0.0.0" publicKeyToken="40e66218d650533f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Uzg/ztNylutl+rxw96BBW8LZfb5b87gz/04CojaD8RI=</DigestValue></Reference></SignedInfo><SignatureValue>K5OILTRAe9wtJrDTMcsTHDi90LPoZRbWvg0XGkHeBvTykSBM2U3XF9EJzrzExrVPzT+gVLroteqlGT1sxYU2hBBuzI79v+UzlrOgMNipRvGhFbunLW5v+dr90sdlJ7CoUyE4owueASGf+df2K805IpnsbSl1vRPqWCOXR5KrMDQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wtjeNGoSvmzC9qt9Pvxbfqs8cT7OvP0DYGL7A/BNkydxeCRN60vQdJBA6c0ISkBIzX2EJChfU66HMUjNMOhUFFvaimLEfNO7bPAiPwRka53ok5gfLlL/GtcW+EImPNRCWWSH83dCBqNJEQDk/YyZfw2eLf5lguoOFz03KRZSbQE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQHYnKAj4wdaFJ0Dn0QeL2hjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwNzE1MTU0NzQwWhcNMTkwNzE1MjE0NzQwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMLY3jRqEr5swvarfT78W36rPHE+zrz9A2Bi+wPwTZMncXgkTetL0HSQQOnNCEpASM19hCQoX1OuhzFIzTDoVBRb2opixHzTu2zwIj8EZGud6JOYHy5S/xrXFvhCJjzUQllkh/N3QgajSREA5P2MmX8Nni3+ZYLqDhc9NykWUm0BAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAc/6zpMM1J5GGKW0pJYCyNwq/6nsDwuyhKk2Wxwpe8XulC9maYnIi8Xw8CcMIXVrehNlmy4pEq948hfOLltpPoDx1dlVUcoPz4Lk/nI67PtNq4HzRKbmaS0D/hFV9F/MD+g7l0tz35X7a2nBS6N0RMpbIqv4/CEM+OntLr0KwXeU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
