@@ -49,14 +49,14 @@
             this.lblScore = new System.Windows.Forms.Label();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtAnswer1 = new System.Windows.Forms.TextBox();
             this.txtAnswer3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtAnswer1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lstPopup = new System.Windows.Forms.ListBox();
-            this.btnPopup = new System.Windows.Forms.Button();
             this.btnComply = new System.Windows.Forms.Button();
+            this.btnPopup = new System.Windows.Forms.Button();
+            this.lstPopup = new System.Windows.Forms.ListBox();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
@@ -89,6 +89,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(757, 157);
             this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // pic1
             // 
@@ -99,6 +100,7 @@
             this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic1.TabIndex = 1;
             this.pic1.TabStop = false;
+            this.pic1.Click += new System.EventHandler(this.pic1_Click);
             // 
             // pic2
             // 
@@ -109,6 +111,7 @@
             this.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic2.TabIndex = 2;
             this.pic2.TabStop = false;
+            this.pic2.Click += new System.EventHandler(this.pic2_Click);
             // 
             // pic3
             // 
@@ -119,6 +122,7 @@
             this.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic3.TabIndex = 3;
             this.pic3.TabStop = false;
+            this.pic3.Click += new System.EventHandler(this.pic3_Click);
             // 
             // pic4
             // 
@@ -129,6 +133,7 @@
             this.pic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic4.TabIndex = 4;
             this.pic4.TabStop = false;
+            this.pic4.Click += new System.EventHandler(this.pic4_Click);
             // 
             // pic5
             // 
@@ -139,6 +144,7 @@
             this.pic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic5.TabIndex = 5;
             this.pic5.TabStop = false;
+            this.pic5.Click += new System.EventHandler(this.pic5_Click);
             // 
             // pic6
             // 
@@ -149,6 +155,7 @@
             this.pic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic6.TabIndex = 6;
             this.pic6.TabStop = false;
+            this.pic6.Click += new System.EventHandler(this.pic6_Click);
             // 
             // pic7
             // 
@@ -159,6 +166,7 @@
             this.pic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic7.TabIndex = 7;
             this.pic7.TabStop = false;
+            this.pic7.Click += new System.EventHandler(this.pic7_Click);
             // 
             // pic8
             // 
@@ -169,6 +177,7 @@
             this.pic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic8.TabIndex = 8;
             this.pic8.TabStop = false;
+            this.pic8.Click += new System.EventHandler(this.pic8_Click);
             // 
             // pic9
             // 
@@ -179,6 +188,7 @@
             this.pic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic9.TabIndex = 9;
             this.pic9.TabStop = false;
+            this.pic9.Click += new System.EventHandler(this.pic9_Click);
             // 
             // pica
             // 
@@ -189,6 +199,7 @@
             this.pica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pica.TabIndex = 10;
             this.pica.TabStop = false;
+            this.pica.Click += new System.EventHandler(this.pica_Click);
             // 
             // btnStart1
             // 
@@ -199,6 +210,7 @@
             this.btnStart1.TabIndex = 1;
             this.btnStart1.Text = "Hiragana";
             this.btnStart1.UseVisualStyleBackColor = false;
+            this.btnStart1.Click += new System.EventHandler(this.btnStart1_Click);
             // 
             // btnStart2
             // 
@@ -209,6 +221,7 @@
             this.btnStart2.TabIndex = 2;
             this.btnStart2.Text = "Katakana";
             this.btnStart2.UseVisualStyleBackColor = false;
+            this.btnStart2.Click += new System.EventHandler(this.btnStart2_Click);
             // 
             // btnStart3
             // 
@@ -219,6 +232,7 @@
             this.btnStart3.TabIndex = 3;
             this.btnStart3.Text = "Hangul";
             this.btnStart3.UseVisualStyleBackColor = false;
+            this.btnStart3.Click += new System.EventHandler(this.btnStart3_Click);
             // 
             // btnStart4
             // 
@@ -229,6 +243,7 @@
             this.btnStart4.TabIndex = 4;
             this.btnStart4.Text = "Cyrillic";
             this.btnStart4.UseVisualStyleBackColor = false;
+            this.btnStart4.Click += new System.EventHandler(this.btnStart4_Click);
             // 
             // btnStart5
             // 
@@ -239,6 +254,7 @@
             this.btnStart5.TabIndex = 5;
             this.btnStart5.Text = "Georgian";
             this.btnStart5.UseVisualStyleBackColor = false;
+            this.btnStart5.Click += new System.EventHandler(this.btnStart5_Click);
             // 
             // btnStart6
             // 
@@ -249,6 +265,7 @@
             this.btnStart6.TabIndex = 6;
             this.btnStart6.Text = "Malayalam";
             this.btnStart6.UseVisualStyleBackColor = false;
+            this.btnStart6.Click += new System.EventHandler(this.btnStart6_Click);
             // 
             // lblScore
             // 
@@ -283,23 +300,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Results";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(46, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Your answer =";
-            // 
-            // txtAnswer1
-            // 
-            this.txtAnswer1.Location = new System.Drawing.Point(162, 54);
-            this.txtAnswer1.Name = "txtAnswer1";
-            this.txtAnswer1.Size = new System.Drawing.Size(186, 20);
-            this.txtAnswer1.TabIndex = 9;
-            // 
             // txtAnswer3
             // 
             this.txtAnswer3.Location = new System.Drawing.Point(162, 92);
@@ -317,6 +317,23 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Progress answer =";
             // 
+            // txtAnswer1
+            // 
+            this.txtAnswer1.Location = new System.Drawing.Point(162, 54);
+            this.txtAnswer1.Name = "txtAnswer1";
+            this.txtAnswer1.Size = new System.Drawing.Size(186, 20);
+            this.txtAnswer1.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Location = new System.Drawing.Point(46, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Your answer =";
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -330,13 +347,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Options";
             // 
-            // lstPopup
+            // btnComply
             // 
-            this.lstPopup.FormattingEnabled = true;
-            this.lstPopup.Location = new System.Drawing.Point(141, 31);
-            this.lstPopup.Name = "lstPopup";
-            this.lstPopup.Size = new System.Drawing.Size(84, 199);
-            this.lstPopup.TabIndex = 0;
+            this.btnComply.Location = new System.Drawing.Point(23, 96);
+            this.btnComply.Name = "btnComply";
+            this.btnComply.Size = new System.Drawing.Size(97, 40);
+            this.btnComply.TabIndex = 2;
+            this.btnComply.Text = "comply";
+            this.btnComply.UseVisualStyleBackColor = true;
+            this.btnComply.Click += new System.EventHandler(this.btnComply_Click);
             // 
             // btnPopup
             // 
@@ -346,15 +365,16 @@
             this.btnPopup.TabIndex = 1;
             this.btnPopup.Text = "Popup";
             this.btnPopup.UseVisualStyleBackColor = true;
+            this.btnPopup.Click += new System.EventHandler(this.btnPopup_Click);
             // 
-            // btnComply
+            // lstPopup
             // 
-            this.btnComply.Location = new System.Drawing.Point(23, 96);
-            this.btnComply.Name = "btnComply";
-            this.btnComply.Size = new System.Drawing.Size(97, 40);
-            this.btnComply.TabIndex = 2;
-            this.btnComply.Text = "comply";
-            this.btnComply.UseVisualStyleBackColor = true;
+            this.lstPopup.FormattingEnabled = true;
+            this.lstPopup.Location = new System.Drawing.Point(141, 31);
+            this.lstPopup.Name = "lstPopup";
+            this.lstPopup.Size = new System.Drawing.Size(84, 199);
+            this.lstPopup.TabIndex = 0;
+            this.lstPopup.SelectedIndexChanged += new System.EventHandler(this.lstPopup_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -374,6 +394,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form1";
             this.Text = "TileConfirmers";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();

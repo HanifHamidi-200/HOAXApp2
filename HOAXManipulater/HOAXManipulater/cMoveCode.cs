@@ -17,6 +17,15 @@ namespace HOAXManipulater
             msMovecode = null;
             msAddress = null;
         }
+        
+        public void fSet(String sMovecode)
+        {
+            msMovecode = sMovecode;
+        }
+        public String fGet()
+        {
+            return msMovecode;
+        }
 
         public void fInit2(int nTryItem)
         {
@@ -123,28 +132,39 @@ namespace HOAXManipulater
 
         public String fPush(String sAdd,ref bool bError)
         {
-            int nLength;
-
-            if (msMovecode == null)
+            int nLength=msMovecode.Length;
+            int nPos=0;
+            bool bFound=false;
+           
+            if (msMovecode.Substring(nLength - 1, 1) != "0")
             {
-                nLength = 0;
-            }
-            else
-            {
-                nLength = msMovecode.Length;
-            }
-
-            if (nLength == 9)
-            {
-                bError = true;
-                return null;
-            }
-            else
-            {
+                nPos = nLength+1;
                 msMovecode = msMovecode + sAdd;
-                bError = false;
-                return msMovecode;
             }
+            else
+            {
+                int i = 0;
+                do
+                {
+                    i += 1;
+                    if (msMovecode.Substring(i - 1, 1) == "0")
+                    {
+                        nPos = i;
+                        bFound = true;
+                    }
+
+                } while (bFound == false);
+                 if (nPos == 1)
+                {
+                    msMovecode = sAdd + msMovecode.Substring(nPos, 9 - nPos);
+                }
+                else
+                {
+                    msMovecode = msMovecode.Substring(0, nPos - 1) + sAdd + msMovecode.Substring(nPos, 9 - nPos);
+                }
+            }
+
+            return msMovecode;
         }
 
         public String fPull(ref bool bError)

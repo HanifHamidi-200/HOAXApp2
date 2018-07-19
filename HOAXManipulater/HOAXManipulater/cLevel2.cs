@@ -99,8 +99,6 @@ namespace HOAXManipulater
             nPuzzle = 1;
              do
             {
-                for (int nPos = 1; nPos <= 3; nPos++)
-                {
                     switch (nPuzzle)
                     {
                         case 1:
@@ -132,10 +130,13 @@ namespace HOAXManipulater
                     sPeek2 = fPeek(sStringCode, Convert.ToInt32(sExamine.Substring(1, 1)));
                     sPeek3 = fPeek(sStringCode, Convert.ToInt32(sExamine.Substring(2, 1)));
                     nAnswer = fParse(sPeek1, sPeek2, sPeek3, sExamine);
+                if (nAnswer != 0)
+                {
                     return nAnswer;
-                   }
-                nPuzzle++;
 
+                }
+                nPuzzle +=1;
+              
             } while (nPuzzle <=8);
 
             return 0;

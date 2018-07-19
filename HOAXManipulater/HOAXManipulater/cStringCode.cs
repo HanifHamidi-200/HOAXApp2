@@ -15,6 +15,11 @@ namespace HOAXManipulater
             msStringcode = "000000000";
         }
 
+        public void fSet(String sStringcode)
+        {
+            msStringcode=sStringcode;
+        }
+
         public void fInit2(int nTryItem)
         {
             switch (nTryItem)

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="HOAXManipulater2.exe" version="1.0.0.2" publicKeyToken="0a17397f72971f3f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="HOAXManipulater2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="HOAXManipulater2.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HOAXManipulater2.exe" size="70112">
+      <assemblyIdentity name="HOAXManipulater2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YOjAnLm9k3L5mWT8U2oHXxWsbkKyoZv4V2W6vu5oyY8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="HOAXManipulater2.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F bestfit.png" size="2586">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/fXHT0wJ0lul7KRJ4JUBYMeE59TJ0DVqOhrmDeOsQ1A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F changelings.png" size="4352">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XTPzE9dzs7pfPJO6njhlitoc+NduNVXFa4REk/EMaEU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F condonement.png" size="7046">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v8ne2371rHAF5PpAfS8DVTGheeVvcr00ar222iVKXp8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F helptips.png" size="6517">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0dy7NSBGS8FcjE3XigQxy+BsduOAXhlbgIO34EUvWm4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F mediaplay.png" size="5763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NiCWbCW751M3PJo6Zrv37Ci9OYZAzT2Fe7AcJknYAso=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F relagations.png" size="5165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Leyi1dPNhG76A2PUYhKvoiMhZuLQVJnrlEbnb8gvV5M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F turnip.png" size="1435">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0tJNpGpBJwzXfp++HWsjV+f2Dy0XV8fA2TtKznouTLI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F willynilly.png" size="3718">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9+zALeCpOC2UbgbGdklVG/qwRcRmhpBNf8JtuaAGrrs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="8ee89d8e3c4ff3c4d18e1a43eea2eae408e70e94" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>FstB0xySFvo8x3hIFVzIczxphMLxmJxuZ01fDwfepI8=</DigestValue></Reference></SignedInfo><SignatureValue>zK3Cjax/OX3PMBP0dMk4E5iFRcGw04Ywq3yWaAiJ8QoHPikr93BMqJDH+O/HGEN+jINz6usWes7byl0njcqpiPFXIDDDWMOOYvkOI2pfq01feXTPKkhvmF4XkEdM3szOrYEHKsB0IWrE+RndaKUiNfWFWvlXDEf4pwhhYmJ+Vhs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>25xxxOseybmyJQ+Rf5W5tjuPNUzhzAhADwRaRw5zyaawjO6R9/d3Rq+v79IZ8A3k/6IwxfmHT1uLmuA7S2kRy8RK0/pUIN01rFr5xYLOjKLkerAZYbI025w09qyWwhWW9WSlgpINPAiRVANjyb0tyQPuDe9JKv1UftUo2ZtSfkU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8fa4de070f5f4d676e9c98f1c284693c73c85c154878c73cfa16921cd341cb16" Description="" Url=""><as:assemblyIdentity name="HOAXManipulater2.exe" version="1.0.0.2" publicKeyToken="0a17397f72971f3f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9post8O26OJbb8fvdMESwm02tND22x6Wmq4H7PpZzcI=</DigestValue></Reference></SignedInfo><SignatureValue>EF/eyRZbRHuDJ3aSr9Atg4ksjNTrz82x9x2SVbU6bdC6x0FA8XS/sYlr0Nqj86XzbbRY0rBufG3pIa7DSgC3bVnjs5R5R0L4GPrfFzBxmKigvTRpD5yqvZ0PEt7KdSdL0iC6U5cP9KljjQl+AxVf51nzga/w6L9Fi1qfH21M9w8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>25xxxOseybmyJQ+Rf5W5tjuPNUzhzAhADwRaRw5zyaawjO6R9/d3Rq+v79IZ8A3k/6IwxfmHT1uLmuA7S2kRy8RK0/pUIN01rFr5xYLOjKLkerAZYbI025w09qyWwhWW9WSlgpINPAiRVANjyb0tyQPuDe9JKv1UftUo2ZtSfkU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQbI26D0UJ765JI9KveZgzzTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwNzE0MDY1NTQzWhcNMTkwNzE0MTI1NTQzWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANucccTrHsm5siUPkX+VubY7jzVM4cwIQA8EWkcOc8mmsIzukff3d0avr+/SGfAN5P+iMMX5h09bi5rgO0tpEcvEStP6VCDdNaxa+cWCzoyi5HqwGWGyNNucNPaslsIVlvVkpYKSDTwIkVQDY8m9LckD7g3vSSr9VH7VKNmbUn5FAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAX94S8YfW6/VupK0aXwEICwiQAOQi5K7Udym/GyCUCb8MrWteX57a2quIeNBTFHqL9mhbkRlbkfj0/6kkHNWXEm1dBihouOcohg71w9oDRpGOaVzrvvqo+ZEMjpibEY5pd1PMjokEcLVQhEt7ZpJlr9pTHdIyCH8yIOtouOn1F+0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
