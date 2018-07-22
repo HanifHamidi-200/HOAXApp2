@@ -17,6 +17,11 @@ namespace MoleculesAgain
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnOpen1_Click(object sender, EventArgs e)
         {
             fSub1 _dlg = new fSub1();
@@ -26,6 +31,13 @@ namespace MoleculesAgain
         private void btnOpen2_Click(object sender, EventArgs e)
         {
             fSub2 _dlg = new fSub2();
+            _dlg.ShowDialog();
+
+        }
+
+        private void btnOpen3_Click(object sender, EventArgs e)
+        {
+            fSub3 _dlg = new fSub3();
             _dlg.ShowDialog();
 
         }
