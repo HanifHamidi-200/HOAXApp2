@@ -31,6 +31,10 @@ namespace AdjacentSteppings2
         private int mnEnemy;
         private static List<int> _status = new List<int> { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,1,1};
 
+        public bool fGetEnemyDead(int nEnemy)
+        {
+            return (_status[nEnemy - 1] == 3);
+        }
         public void fSetenemy(int nEnemy)
         {
             mnEnemy = nEnemy;

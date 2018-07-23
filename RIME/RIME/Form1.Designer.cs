@@ -30,6 +30,8 @@
         {
             this.btnOpen1 = new System.Windows.Forms.Button();
             this.btnOpen2 = new System.Windows.Forms.Button();
+            this.btnOpen4 = new System.Windows.Forms.Button();
+            this.btnOpen3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpen1
@@ -50,15 +52,39 @@
             this.btnOpen2.Name = "btnOpen2";
             this.btnOpen2.Size = new System.Drawing.Size(253, 57);
             this.btnOpen2.TabIndex = 1;
-            this.btnOpen2.Text = "UtilityMaker3";
+            this.btnOpen2.Text = "FreeTyper";
             this.btnOpen2.UseVisualStyleBackColor = false;
             this.btnOpen2.Click += new System.EventHandler(this.btnOpen2_Click);
+            // 
+            // btnOpen4
+            // 
+            this.btnOpen4.BackColor = System.Drawing.Color.Yellow;
+            this.btnOpen4.Location = new System.Drawing.Point(70, 266);
+            this.btnOpen4.Name = "btnOpen4";
+            this.btnOpen4.Size = new System.Drawing.Size(253, 57);
+            this.btnOpen4.TabIndex = 3;
+            this.btnOpen4.Text = "UtilityMaker3";
+            this.btnOpen4.UseVisualStyleBackColor = false;
+            this.btnOpen4.Click += new System.EventHandler(this.btnOpen4_Click);
+            // 
+            // btnOpen3
+            // 
+            this.btnOpen3.BackColor = System.Drawing.Color.Yellow;
+            this.btnOpen3.Location = new System.Drawing.Point(70, 203);
+            this.btnOpen3.Name = "btnOpen3";
+            this.btnOpen3.Size = new System.Drawing.Size(253, 57);
+            this.btnOpen3.TabIndex = 2;
+            this.btnOpen3.Text = "WordsAndSentences";
+            this.btnOpen3.UseVisualStyleBackColor = false;
+            this.btnOpen3.Click += new System.EventHandler(this.btnOpen3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(492, 450);
+            this.Controls.Add(this.btnOpen4);
+            this.Controls.Add(this.btnOpen3);
             this.Controls.Add(this.btnOpen2);
             this.Controls.Add(this.btnOpen1);
             this.Name = "Form1";
@@ -71,6 +97,8 @@
 
         private System.Windows.Forms.Button btnOpen1;
         private System.Windows.Forms.Button btnOpen2;
+        private System.Windows.Forms.Button btnOpen4;
+        private System.Windows.Forms.Button btnOpen3;
     }
 }
 

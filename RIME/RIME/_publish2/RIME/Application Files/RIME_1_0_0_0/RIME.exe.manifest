@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="RIME.exe" version="1.0.0.0" publicKeyToken="f3907fbfccc1b4b5" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RIME" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="RIME.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RIME.exe" size="11744">
+      <assemblyIdentity name="RIME" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WRccCUQK025rKZJOifjqNixSYyvuc4aQBh0S5E101gg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="RIME.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="228bf23131a52d828c6938abb793e9f5f0930515" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9TpX1EDGVLvO2lyUbsDI/lwLLQtRyp9rjNcxwFzWmuw=</DigestValue></Reference></SignedInfo><SignatureValue>RGinAQLT2SQe+a1U2OcSZhIbvb3ge8xPnxWgio40Sh1yqooKL+NLF5e3T2SjVF2rkzVRp6CuXfKYLEGnn42dEHoLq6Z9yOGqD/PcfweHx9yVegVv9tdGRLFMwE3HB/As2Je23+w0fzbNLkvo/epdvoZzftENAihQEeEHHLzNsbM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>od5cSzdHMH/Y4N51DraUMHLYeLuYbkQRUUZgx9iahuRbHtsC6IbBAChuJmEbzdD/sOjxfBEPa/ty33mHvEDdTQfwduBc7ZU9pj19PIAINICB1zkzwEFvGamOXd4mKU+Tqo8XIy5jVP7mCrX7LdcoDMnwt7pwIlY8OOeQidY96QU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ec9ad65cc031d78c6b9fca510b2d0b5cfec8c06e945cdacebb54c640d4573af5" Description="" Url=""><as:assemblyIdentity name="RIME.exe" version="1.0.0.0" publicKeyToken="f3907fbfccc1b4b5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+W2BpzUX46On1scxqYrdlv6Wzut04A5r+3FWOORMs44=</DigestValue></Reference></SignedInfo><SignatureValue>a0/37phpppyua8fAlDXB+Qy/gy6AeYi5HTslvSQZRH78ivO8zmMXaLYx5OWIppdDA8gwQYioVM2oPrzwWV4qa+we9ZcC4xmcKcbvmXjlhknfCYiFBpwcNRz4aNuFDx0cHClkpd+1lkArheQjwPb1FJZFUz94MFSroCktBWpSFDE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>od5cSzdHMH/Y4N51DraUMHLYeLuYbkQRUUZgx9iahuRbHtsC6IbBAChuJmEbzdD/sOjxfBEPa/ty33mHvEDdTQfwduBc7ZU9pj19PIAINICB1zkzwEFvGamOXd4mKU+Tqo8XIy5jVP7mCrX7LdcoDMnwt7pwIlY8OOeQidY96QU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQFGHYEe41kqdMiLPSuZoRXzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwNzIzMTEwNTQ4WhcNMTkwNzIzMTcwNTQ4WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKHeXEs3RzB/2ODedQ62lDBy2Hi7mG5EEVFGYMfYmobkWx7bAuiGwQAobiZhG83Q/7Do8XwRD2v7ct95h7xA3U0H8HbgXO2VPaY9fTyACDSAgdc5M8BBbxmpjl3eJilPk6qPFyMuY1T+5gq1+y3XKAzJ8Le6cCJWPDjnkInWPekFAgMBAAEwDQYJKoZIhvcNAQELBQADgYEARe26cGUC8NNOLlD0QO5dzcP1N1uT+TONnFqXj1fSxk/tz0m+l11F0J6T5PhScNmnG28h19QUmBqgUqeYc4rRwBKzTHfo9A5aNp2AthmsZYkBtJ2EVPLPMxm/bIoQOk0qkzi851nzwQR+nekZhu3rrf1F8vo5dWPHKPsuPI5ggsk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
