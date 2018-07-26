@@ -27,7 +27,8 @@ namespace HOAXManipulater
         private bool mbTurn;
         private int mnRestart;
         private int mnAutoLevel;
-
+        private bool mbDB, mbAI;
+        private int nNumber;
         private bool fCheck(String sCode)
         {
             String sText = _StringCode.fGet();
@@ -69,11 +70,13 @@ namespace HOAXManipulater
 
         private void fMove(int nSquare, ref bool bAbort)
         {
+            Random rnd1=new Random();
             bool bError = false;
             String sStringcode = _StringCode.fGet();
             int nType = Convert.ToInt16(sStringcode.Substring( nSquare - 1,1));
             int nNew=0;
 
+            nNumber = rnd1.Next(1, 10);
             if (mnMove == 0)
             {
                 bAbort = true;
@@ -109,9 +112,53 @@ namespace HOAXManipulater
             {
                 fRotateTurn();
             }
+
+            if (mbAI)
+            {
+                if (nNumber <= 2)
+                {
+                    nSquare = fMoveAuto(ref bAbort);
+                    nNumber = rnd1.Next(1, 10);
+                    if (mnMove == 0)
+                    {
+                        bAbort = true;
+                        return;
+                    }
+                    if (nType == 0)
+                    {
+                        if (mbTurn)
+                        {
+                            nNew = 1;
+                        }
+                        else
+                        {
+                            nNew = 2;
+                        }
+                    }
+                    else
+                    {
+                        bAbort = true;
+
+                    }
+
+                    if (bAbort)
+                    {
+                        MessageBox.Show("Error!");
+                        return;
+                    }
+                    _StringCode.fPush(Convert.ToString(nNew), nSquare, ref bError);
+                    _MoveCode.fPush(Convert.ToString(nSquare), ref bError);
+                    fUpdateDisplay();
+                    fExamine();
+                    if (mbTurn)
+                    {
+                        fRotateTurn();
+                    }
+                }
+            }
         }
 
-        private void fMoveAuto( ref bool bAbort)
+        private int fMoveAuto( ref bool bAbort)
         {
             Random rnd1 = new Random();
             bool bFound = false;
@@ -165,8 +212,8 @@ namespace HOAXManipulater
                     break;
             }
 
-            fMove(nAnswer, ref bAbort2);
-            bAbort = bAbort2;
+           bAbort = bAbort2;
+            return nAnswer;
          }
 
         private void fPeek(int nValue, int nRotate, ref PictureBox _pic2)
@@ -388,8 +435,7 @@ namespace HOAXManipulater
         private void fExamine()
         {
             String sExamine;
-            bool bAbort = false;
-
+   
             if (!mbTurn)
             {
                 sExamine = "Examine = 'YOU turn'";
@@ -400,9 +446,7 @@ namespace HOAXManipulater
             {
                 sExamine = "Examine = 'AUTO turn'";
                 lblExamine.Text = sExamine;
-                fMoveAuto(ref bAbort);
            }
-            fRotateTurn();
         }
 
         private void fRotateTurn()
@@ -419,7 +463,6 @@ namespace HOAXManipulater
             if (mnMove == 10)
             {
                 MessageBox.Show("Error!");
-                Application.Exit();
                 return;
             }
         }
@@ -455,9 +498,6 @@ namespace HOAXManipulater
 
             lblExamine.Text = sExamine;
 
-            switch (mnRestart)
-            {
-                case 4:
                     fStudyPath _dlg = new fStudyPath();
                     _dlg.ShowDialog();
                     String sName = "dlg.txt";
@@ -495,11 +535,7 @@ namespace HOAXManipulater
                         MessageBox.Show("The file could not be read:", e1.Message);
                         fReset();
                     }
-                    break;
-                default:
-                    break;
-            }
-
+               
             fUpdateDisplay();
             fExamine();
         }
@@ -763,6 +799,8 @@ namespace HOAXManipulater
         private void btnRestart2_Click(object sender, EventArgs e)
         {
             mnRestart = 2;
+            mbDB = false;
+            mbAI = true;
             fRestart();
 
         }
@@ -777,6 +815,8 @@ namespace HOAXManipulater
         private void btnRestart4_Click(object sender, EventArgs e)
         {
             mnRestart = 4;
+            mbDB = true;
+            mbAI = false;
             fRestart();
 
         }
@@ -784,6 +824,8 @@ namespace HOAXManipulater
         private void btnRestart5_Click(object sender, EventArgs e)
         {
             mnRestart = 5;
+            mbDB = true;
+            mbAI = true;
             fRestart();
 
         }
@@ -805,6 +847,8 @@ namespace HOAXManipulater
         private void btnRestart8_Click(object sender, EventArgs e)
         {
             mnRestart = 8;
+            mbDB = false;
+            mbAI = false;
             fRestart();
 
         }
@@ -813,134 +857,106 @@ namespace HOAXManipulater
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
                 fMove(1, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-        }
+          }
 
         private void pic2_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
-                fMove(2, ref bAbort);
+                 fMove(2, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-
+        
         }
 
         private void pic3_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
-                fMove(3, ref bAbort);
+                 fMove(3, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-
+        
         }
 
         private void pic4_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
-                fMove(4, ref bAbort);
+                 fMove(4, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-
+       
         }
 
         private void pic5_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
-                fMove(5, ref bAbort);
+                  fMove(5, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-
+      
         }
 
         private void pic6_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
-                fMove(6, ref bAbort);
+                  fMove(6, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-
+         
         }
 
         private void pic7_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
-                fMove(7, ref bAbort);
+                 fMove(7, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-
+      
         }
 
         private void pic8_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
                 fMove(8, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-
+       
         }
 
         private void pic9_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-            if (mbTurn)
-            {
                 fMove(9, ref bAbort);
                 if (!bAbort)
                 {
                     fRotateTurn();
                 }
-            }
-
-        }
+                 }
     }
 }

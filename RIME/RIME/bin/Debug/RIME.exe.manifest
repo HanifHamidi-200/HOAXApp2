@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="RIME.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="RIME.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F egmont.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="RIME" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RIME.exe" size="163296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RIME.exe" size="186848">
       <assemblyIdentity name="RIME" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jn/EndV1YpZpCmLhlb6mJhajV3atmPY+DXtm5EA8SFI=</dsig:DigestValue>
+        <dsig:DigestValue>mDksS3LiENBebuv4kLzOpi4sn+MHgfmYr13l0abtH9M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -350,6 +351,15 @@
       <dsig:DigestValue>eUmf/yH/fVf8b64nIMy+mhXXsq/mOedkit5AB3hDfWU=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="F egmont.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NqkK65rMmSur3WjqZUK27tGhEVM19JDg5TfzDpBzMsw=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="files\F Angular4.txt" size="326">
     <hash>
       <dsig:Transforms>
@@ -456,6 +466,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>L5OFVpqm+L1jgCrBV4YpIiKfDtuFR7gr0okwsU1pgWw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="files\F WordsAndSentences.txt" size="2279">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4+czRmMSCXNHDc6WWVqjClOlPs2C9PQTbUtinVoUsQE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="georgian\F a.png" size="711">

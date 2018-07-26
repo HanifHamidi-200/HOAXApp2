@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -58,6 +58,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>F egmont.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -190,6 +193,7 @@
     <Content Include="cyrillic\F x.png" />
     <Content Include="cyrillic\F z.png" />
     <Content Include="cyrillic\F zch.png" />
+    <Content Include="F egmont.ico" />
     <Content Include="files\F Angular4.txt" />
     <Content Include="files\F css.txt" />
     <Content Include="files\F Heavenways.txt" />
@@ -202,6 +206,7 @@
     <Content Include="files\F ProgrammingAllows.txt" />
     <Content Include="files\F ProgrammingTypes.txt" />
     <Content Include="files\F todolist-1.txt" />
+    <Content Include="files\F WordsAndSentences.txt" />
     <Content Include="georgian\F a.png" />
     <Content Include="georgian\F b.png" />
     <Content Include="georgian\F ch.png" />
