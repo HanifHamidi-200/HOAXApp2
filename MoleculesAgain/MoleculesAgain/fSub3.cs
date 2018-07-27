@@ -55,19 +55,19 @@ namespace MoleculesAgain
 
             switch (nType)
             {
-                case 7:
+                case 13:
                     nScore += 10;
                     fStick(2, nCol, nRow, 2, rnd1.Next(1, 5));
                     break;
-                case 8:
+                case 14:
                     nScore += 10;
                     fStick(2, nCol, nRow, 2, rnd1.Next(1, 5));
                     break;
-                case 9:
+                case 15:
                     nScore += 10;
                     fStick(2, nCol, nRow, 2, rnd1.Next(1, 5));
                     break;
-                case 10:
+                case 16:
                     nScore += 10;
                     fStick(2, nCol, nRow, 2, rnd1.Next(1, 5));
                     break;
@@ -297,7 +297,7 @@ namespace MoleculesAgain
                                     nNumber = rnd1.Next(1, 10);
                                     if (nNumber <= 8)
                                     {
-                                        nType = rnd1.Next(7, 11);
+                                        nType = rnd1.Next(13, 17);
                                         nRotate = rnd1.Next(1, 5);
                                         fStick(2, i, j, nType, nRotate);
                                     }
@@ -410,30 +410,66 @@ namespace MoleculesAgain
             PictureBox picture7 = new PictureBox
             {
                 Name = "pictureBox7",
-                Image = Image.FromFile(@"F spark_clothes.png"),
+                Image = Image.FromFile(@"F m_blue.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture8 = new PictureBox
             {
                 Name = "pictureBox8",
-                Image = Image.FromFile(@"F spark_equipment.png"),
+                Image = Image.FromFile(@"F m_green.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture9 = new PictureBox
             {
                 Name = "pictureBox9",
-                Image = Image.FromFile(@"F spark_food.png"),
+                Image = Image.FromFile(@"F m_orange.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture10 = new PictureBox
             {
                 Name = "pictureBox10",
-                Image = Image.FromFile(@"F spark_machines.png"),
+                Image = Image.FromFile(@"F m_purple.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture11 = new PictureBox
             {
                 Name = "pictureBox11",
+                Image = Image.FromFile(@"F m_red.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture12 = new PictureBox
+            {
+                Name = "pictureBox12",
+                Image = Image.FromFile(@"F m_yellow.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture13= new PictureBox
+            {
+                Name = "pictureBox13",
+                Image = Image.FromFile(@"F spark_clothes.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture14 = new PictureBox
+            {
+                Name = "pictureBox14",
+                Image = Image.FromFile(@"F spark_equipment.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture15= new PictureBox
+            {
+                Name = "pictureBox15",
+                Image = Image.FromFile(@"F spark_food.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture16 = new PictureBox
+            {
+                Name = "pictureBox16",
+                Image = Image.FromFile(@"F spark_machines.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture17 = new PictureBox
+            {
+                Name = "pictureBox17",
                 Image = Image.FromFile(@"F NullGate.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
@@ -470,8 +506,26 @@ namespace MoleculesAgain
                 case 10:
                     _pic2 = picture10;
                     break;
-                default:
+                case 11:
                     _pic2 = picture11;
+                    break;
+                case 12:
+                    _pic2 = picture12;
+                    break;
+                case 13:
+                    _pic2 = picture13;
+                    break;
+                case 14:
+                    _pic2 = picture14;
+                    break;
+                case 15:
+                    _pic2 = picture15;
+                    break;
+                case 16:
+                    _pic2 = picture16;
+                    break;
+                default:
+                    _pic2 = picture17;
                     break;
             }
             for (int i = 1; i <= nRotate - 1; i++)

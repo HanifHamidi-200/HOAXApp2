@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="MoleculesAgain.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="MoleculesAgain.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F egmont.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="MoleculesAgain" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,17 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MoleculesAgain.exe" size="795104">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MoleculesAgain.exe" size="829408">
       <assemblyIdentity name="MoleculesAgain" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LMEFaepMTsoA3vLj/kmqIMVysub+hAF1TlKIJdZIKTE=</dsig:DigestValue>
+        <dsig:DigestValue>bAvexzBJCd7kgPbTouHGdDCujlVdoQJKYnZPm6wLXAU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="F egmont.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NqkK65rMmSur3WjqZUK27tGhEVM19JDg5TfzDpBzMsw=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="icons\F ballmolecule.png" size="2849">
     <hash>
       <dsig:Transforms>
@@ -105,6 +115,60 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>HsXnPw2ytitO3o3edIkkkTZPDKG4M8BTpgB/vJcSguQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F m_blue.png" size="646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>o3rR0AnUj0F/5eAgDdPJ2/eQUebdffvbFyfEA+NxtyY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F m_green.png" size="586">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3VbkKlT71i50rxAAjEOi1fuClqKl7bsW0pDVgNaOQ34=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F m_orange.png" size="631">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g/GwN+/30dS8M7NGJsitV4Q9lcJbozE4pvIm2cPqYSY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F m_purple.png" size="691">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z4Qk2+f3jL00VD/qGWcYsJpR0wFwSSeH5jvpcNxyHZo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F m_red.png" size="569">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8cOKgdcip30lPMFDA9/b8dcRFg8k/qPvcvwkyXMudYM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons\F m_yellow.png" size="633">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZUeMg6SyjF7bzgbuaNYbE42qrcwHp+VlOSnvsmRojDI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="icons\F Nullgate.png" size="3278">

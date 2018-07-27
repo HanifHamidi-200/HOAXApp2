@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -58,6 +58,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>F egmont.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -136,12 +139,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="F egmont.ico" />
     <Content Include="icons\F ballmolecule.png" />
     <Content Include="icons\F casings.png" />
     <Content Include="icons\F correspondingcastings1.png" />
     <Content Include="icons\F correspondingcastings2.png" />
     <Content Include="icons\F field1.png" />
     <Content Include="icons\F field2.png" />
+    <Content Include="icons\F m_blue.png" />
+    <Content Include="icons\F m_green.png" />
+    <Content Include="icons\F m_orange.png" />
+    <Content Include="icons\F m_purple.png" />
+    <Content Include="icons\F m_red.png" />
+    <Content Include="icons\F m_yellow.png" />
     <Content Include="icons\F Nullgate.png" />
     <Content Include="icons\F spark_clothes.png" />
     <Content Include="icons\F spark_equipment.png" />
