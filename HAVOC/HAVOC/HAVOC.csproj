@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>_publish\HAVOC\</PublishUrl>
+    <PublishUrl>_publish2\HAVOC\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -58,6 +58,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>F tryseed.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -146,11 +149,40 @@
   <ItemGroup>
     <Content Include="data\F 50states-1.txt" />
     <Content Include="data\F 50states-2.txt" />
+    <Content Include="data\F arClothes.txt" />
+    <Content Include="data\F arGeography-1.txt" />
+    <Content Include="data\F arGeography-2.txt" />
+    <Content Include="data\F arGeography-3.txt" />
+    <Content Include="data\F arGeography-4.txt" />
+    <Content Include="data\F arMedicine-1.txt" />
+    <Content Include="data\F arMedicine-2.txt" />
+    <Content Include="data\F arMedicine-3.txt" />
+    <Content Include="data\F arMedicine-4.txt" />
+    <Content Include="data\F arPlaces-1.txt" />
+    <Content Include="data\F arPlaces-2.txt" />
+    <Content Include="data\F arPlaces-3.txt" />
+    <Content Include="data\F arPlaces-4.txt" />
+    <Content Include="data\F arReligion-1.txt" />
+    <Content Include="data\F arReligion-2.txt" />
+    <Content Include="data\F arReligion-3.txt" />
+    <Content Include="data\F arReligion-4.txt" />
+    <Content Include="data\F arRooms-1.txt" />
+    <Content Include="data\F arRooms-2.txt" />
+    <Content Include="data\F arRooms-3.txt" />
+    <Content Include="data\F arRooms-4.txt" />
+    <Content Include="data\F arRooms-5.txt" />
+    <Content Include="data\F chClothes.txt" />
+    <Content Include="data\F grColours.txt" />
+    <Content Include="data\F jaClothes.txt" />
+    <Content Include="data\F koClothes.txt" />
+    <Content Include="data\F mlClothes.txt" />
+    <Content Include="data\F ruClothes.txt" />
+    <Content Include="F tryseed.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.6.1%28x86 및 x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
