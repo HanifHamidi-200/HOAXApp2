@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTry = new System.Windows.Forms.Label();
             this.txtInput = new System.Windows.Forms.TextBox();
+            this.lblTry = new System.Windows.Forms.Label();
             this.btnDatabase = new System.Windows.Forms.Button();
             this.txtDatabaseNumber = new System.Windows.Forms.TextBox();
             this.txtDatabaseName = new System.Windows.Forms.TextBox();
@@ -39,6 +39,7 @@
             this.lblClue1 = new System.Windows.Forms.Label();
             this.lblClue2 = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
+            this.txtCopy = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +54,15 @@
             this.panel1.Size = new System.Drawing.Size(188, 255);
             this.panel1.TabIndex = 0;
             // 
+            // txtInput
+            // 
+            this.txtInput.Location = new System.Drawing.Point(14, 177);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(146, 20);
+            this.txtInput.TabIndex = 1;
+            this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
+            this.txtInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtInput_KeyUp);
+            // 
             // lblTry
             // 
             this.lblTry.AutoSize = true;
@@ -64,15 +74,6 @@
             this.lblTry.Size = new System.Drawing.Size(56, 28);
             this.lblTry.TabIndex = 1;
             this.lblTry.Text = "try 1";
-            // 
-            // txtInput
-            // 
-            this.txtInput.Location = new System.Drawing.Point(14, 177);
-            this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(146, 20);
-            this.txtInput.TabIndex = 1;
-            this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
-            this.txtInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtInput_KeyUp);
             // 
             // btnDatabase
             // 
@@ -146,17 +147,27 @@
             // 
             this.lblScore.AutoSize = true;
             this.lblScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblScore.Location = new System.Drawing.Point(643, 64);
+            this.lblScore.Location = new System.Drawing.Point(240, 64);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(55, 15);
             this.lblScore.TabIndex = 8;
             this.lblScore.Text = "Score = 0";
+            // 
+            // txtCopy
+            // 
+            this.txtCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtCopy.Location = new System.Drawing.Point(616, 12);
+            this.txtCopy.Name = "txtCopy";
+            this.txtCopy.Size = new System.Drawing.Size(140, 167);
+            this.txtCopy.TabIndex = 9;
+            this.txtCopy.Text = "";
             // 
             // fSub2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCopy);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblClue2);
             this.Controls.Add(this.lblClue1);
@@ -189,5 +200,6 @@
         private System.Windows.Forms.Label lblClue1;
         private System.Windows.Forms.Label lblClue2;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.RichTextBox txtCopy;
     }
 }

@@ -36,11 +36,11 @@ namespace HOAXManipulater
             int nPos2 = Convert.ToInt32(sCode.Substring(1, 1));
             int nPos3 = Convert.ToInt32(sCode.Substring(2, 1));
 
-             if (sText.Substring(nPos1 - 1,1) == "1")
+            if (sText.Substring(nPos1 - 1, 1) == "1")
             {
-                if (sText.Substring(nPos2 - 1,1) == "1")
+                if (sText.Substring(nPos2 - 1, 1) == "1")
                 {
-                    if (sText.Substring(nPos3 - 1,1) == "1")
+                    if (sText.Substring(nPos3 - 1, 1) == "1")
                     {
                         return true;
                     }
@@ -55,11 +55,11 @@ namespace HOAXManipulater
             int nPos2 = Convert.ToInt32(sCode.Substring(1, 1));
             int nPos3 = Convert.ToInt32(sCode.Substring(2, 1));
 
-            if (sText.Substring(nPos1 - 1) == "2")
+            if (sText.Substring(nPos1 - 1,1) == "2")
             {
-                if (sText.Substring(nPos2 - 1) == "2")
+                if (sText.Substring(nPos2 - 1,1) == "2")
                 {
-                    if (sText.Substring(nPos3 - 1) == "2")
+                    if (sText.Substring(nPos3 - 1,1) == "2")
                     {
                         return true;
                     }
@@ -70,11 +70,12 @@ namespace HOAXManipulater
 
         private void fMove(int nSquare, ref bool bAbort)
         {
-            Random rnd1=new Random();
+            Random rnd1 = new Random();
             bool bError = false;
             String sStringcode = _StringCode.fGet();
-            int nType = Convert.ToInt16(sStringcode.Substring( nSquare - 1,1));
-            int nNew=0;
+            int nType = Convert.ToInt16(sStringcode.Substring(nSquare - 1, 1));
+            int nNew = 0;
+            String sExamine;
 
             nNumber = rnd1.Next(1, 10);
             if (mnMove == 0)
@@ -88,14 +89,15 @@ namespace HOAXManipulater
                 {
                     nNew = 1;
                 }
-                else {
+                else
+                {
                     nNew = 2;
-                 }
+                }
             }
             else
             {
-                     bAbort = true;
-          
+                bAbort = true;
+
             }
 
             if (bAbort)
@@ -104,14 +106,21 @@ namespace HOAXManipulater
                 return;
             }
 
-             _StringCode.fPush(Convert.ToString(nNew), nSquare , ref bError);
-            _MoveCode.fPush(Convert.ToString(nSquare),  ref bError);
+            _StringCode.fPush(Convert.ToString(nNew), nSquare, ref bError);
+            _MoveCode.fPush(Convert.ToString(nSquare), ref bError);
             fUpdateDisplay();
-            fExamine();
+            fRotateTurn();
             if (mbTurn)
             {
-                fRotateTurn();
+                sExamine = "Examine = 'YOU go'";
+
             }
+            else
+            {
+                sExamine = "Examine = 'O go'";
+            }
+            lblExamine.Text = sExamine;
+            lstExamine.Items.Add(sExamine);
 
             if (mbAI)
             {
@@ -149,21 +158,60 @@ namespace HOAXManipulater
                     _StringCode.fPush(Convert.ToString(nNew), nSquare, ref bError);
                     _MoveCode.fPush(Convert.ToString(nSquare), ref bError);
                     fUpdateDisplay();
-                    fExamine();
+                    fRotateTurn();
                     if (mbTurn)
                     {
-                        fRotateTurn();
+                        sExamine = "Examine = 'YOU go'";
+
                     }
+                    else
+                    {
+                        sExamine = "Examine = 'O go'";
+                    }
+                    lblExamine.Text = sExamine;
+                    lstExamine.Items.Add(sExamine);
+                }
+                else
+                {
+                    /*
+                    fRotateTurn();
+                    if (mbTurn)
+                    {
+                        sExamine = "Examine = 'YOU go'";
+
+                    }
+                    else
+                    {
+                        sExamine = "Examine = 'O go'";
+                    }
+                    */
                 }
             }
+            else
+            {
+                /*
+                fRotateTurn();
+                if (mbTurn)
+                {
+                    sExamine = "Examine = 'YOU go'";
+
+                }
+                else
+                {
+                    sExamine = "Examine = 'O go'";
+                }
+                */
+
+            }
+
         }
 
-        private int fMoveAuto( ref bool bAbort)
+        private int fMoveAuto(ref bool bAbort)
         {
             Random rnd1 = new Random();
             bool bFound = false;
-             String sStringCode = _StringCode.fGet();
-            int nAnswer=0;
+            String sStringCode = _StringCode.fGet();
+            int nAnswer = 0;
             bool bAbort2 = false;
             int nSquare = 0;
 
@@ -185,7 +233,7 @@ namespace HOAXManipulater
                     } while (bFound == false);
                     break;
                 case 2:
-                    nAnswer=_Level2.fResponse(sStringCode);
+                    nAnswer = _Level2.fResponse(sStringCode);
                     if (nAnswer == 0)
                     {
                         do
@@ -204,7 +252,7 @@ namespace HOAXManipulater
                         break;
 
                     }
-                    
+
                     break;
                 case 3:
                     break;
@@ -212,9 +260,9 @@ namespace HOAXManipulater
                     break;
             }
 
-           bAbort = bAbort2;
+            bAbort = bAbort2;
             return nAnswer;
-         }
+        }
 
         private void fPeek(int nValue, int nRotate, ref PictureBox _pic2)
         {
@@ -254,7 +302,7 @@ namespace HOAXManipulater
                 Image = Image.FromFile(@"F mediaplay.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
-             PictureBox picture7 = new PictureBox
+            PictureBox picture7 = new PictureBox
             {
                 Name = "pictureBox7",
                 Image = Image.FromFile(@"F O.png"),
@@ -357,7 +405,7 @@ namespace HOAXManipulater
                     _pic2 = picture15;
                     break;
             }
-           
+
         }
 
         private int fTypecos(int nType)
@@ -370,7 +418,7 @@ namespace HOAXManipulater
                     return 7;
                 default:
                     return 4;
-             }
+            }
         }
         private void fUpdateDisplay()
         {
@@ -429,25 +477,9 @@ namespace HOAXManipulater
                     lstExamine.Items.RemoveAt(0);
                 } while (lstExamine.Items.Count > 0);
             }
-       
+
         }
 
-        private void fExamine()
-        {
-            String sExamine;
-   
-            if (!mbTurn)
-            {
-                sExamine = "Examine = 'YOU turn'";
-                lblExamine.Text = sExamine;
-
-            }
-            else
-            {
-                sExamine = "Examine = 'AUTO turn'";
-                lblExamine.Text = sExamine;
-           }
-        }
 
         private void fRotateTurn()
         {
@@ -471,73 +503,75 @@ namespace HOAXManipulater
             int nMode = _YOUCharacter.fGetMode();
             String sExamine = null;
             int nItem, nRotate;
-            String sStringcode,sMovecode;
+            String sStringcode, sMovecode;
 
             fReset();
             _StringCode.fInit();
             _MoveCode.fInit();
+            mnMove = 0;
 
-            switch (nMode)
+            if (nMode == 1)
             {
-                case 1:
-                    sExamine = "Examine = 'YOU start'";
-                    mnMove = 0;
-                    mbTurn = true;
-                    break;
-                case 2:
-                    sExamine = "Examine = 'AUTO start'";
-                    mnMove = 0;
-                    mbTurn = false;
-                    break;
-                default:
-                    sExamine = "Examine = 'AUTO start'";
-                    mnMove = 0;
-                    mbTurn = false;
-                    break;
+                mbTurn = true;
+            }
+            else
+            {
+                mbTurn = false;
             }
 
             lblExamine.Text = sExamine;
+           // lstExamine.Items.Add(sExamine);
 
-                    fStudyPath _dlg = new fStudyPath();
-                    _dlg.ShowDialog();
-                    String sName = "dlg.txt";
-                     String sLine;
+            fStudyPath _dlg = new fStudyPath();
+            _dlg.ShowDialog();
+            String sName = "dlg.txt";
+            String sLine;
 
-                    try
-                    {   // Open the text file using a stream reader.
-                        using (StreamReader sr = new StreamReader(sName))
-                        {
-                            // Read the stream to a string, and write the string to the console.
-                            sLine = sr.ReadLine();
-                            nItem = Convert.ToInt32(sLine);
-                            sLine = sr.ReadLine();
-                            nRotate = Convert.ToInt32(sLine);
-                        }
-                        _studypath.fSet(nItem, nRotate);
-                        sMovecode = _studypath.fTranscribe1();
-                        sMovecode = _studypath.fTranscribe2(sMovecode);
-                        sStringcode = _studypath.fTranscribe3();
-                        sStringcode = _studypath.fTranscribe4();
-                        _MoveCode.fSet(sMovecode);
-                        _StringCode.fSet(sStringcode);
-                        mnMove = 2;
-                        if (mbTurn)
-                        {
-                            mbTurn = false;
-                        }
-                        else
-                        {
-                            mbTurn = true;
-                        }
-                    }
-                    catch (Exception e1)
-                    {
-                        MessageBox.Show("The file could not be read:", e1.Message);
-                        fReset();
-                    }
-               
+            try
+            {   // Open the text file using a stream reader.
+                using (StreamReader sr = new StreamReader(sName))
+                {
+                    // Read the stream to a string, and write the string to the console.
+                    sLine = sr.ReadLine();
+                    nItem = Convert.ToInt32(sLine);
+                    sLine = sr.ReadLine();
+                    nRotate = Convert.ToInt32(sLine);
+                }
+                _studypath.fSet(nItem, nRotate);
+                sMovecode = _studypath.fTranscribe1();
+                sMovecode = _studypath.fTranscribe2(sMovecode);
+                sStringcode = _studypath.fTranscribe3();
+                sStringcode = _studypath.fTranscribe4();
+                _MoveCode.fSet(sMovecode);
+                _StringCode.fSet(sStringcode);
+                mnMove = 2;
+                if (mbTurn)
+                {
+                    mbTurn = false;
+                }
+                else
+                {
+                    mbTurn = true;
+                }
+                if (mbTurn)
+                {
+                    sExamine = "Examine = 'YOU go'";
+
+                }
+                else
+                {
+                    sExamine = "Examine = 'O go'";
+                }
+                lblExamine.Text = sExamine;
+                lstExamine.Items.Add(sExamine);
+            }
+            catch (Exception e1)
+            {
+                MessageBox.Show("The file could not be read:", e1.Message);
+                fReset();
+            }
+
             fUpdateDisplay();
-            fExamine();
         }
 
         public fSub1()
@@ -697,7 +731,7 @@ namespace HOAXManipulater
         private void btnComply_Click(object sender, EventArgs e)
         {
             bool bFound = false;
-          
+
             for (int i = 1; i <= 8; i++)
             {
                 switch (i)
@@ -786,8 +820,18 @@ namespace HOAXManipulater
 
         private void btnYOU3_Click(object sender, EventArgs e)
         {
-            _YOUCharacter.fSetMode(3);
+            Random rnd1 = new Random();
+            nNumber = rnd1.Next(1, 10);
+            if (nNumber <= 5)
+            {
+                _YOUCharacter.fSetMode(1);
 
+            }
+            else
+            {
+                _YOUCharacter.fSetMode(2);
+
+            }
         }
 
         private void btnRestart1_Click(object sender, EventArgs e)
@@ -857,106 +901,70 @@ namespace HOAXManipulater
         {
             bool bAbort = false;
 
-                fMove(1, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-          }
+            fMove(1, ref bAbort);
+        }
 
         private void pic2_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-                 fMove(2, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-        
+            fMove(2, ref bAbort);
+
         }
 
         private void pic3_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-                 fMove(3, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-        
+            fMove(3, ref bAbort);
+
         }
 
         private void pic4_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-                 fMove(4, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-       
+            fMove(4, ref bAbort);
+
         }
 
         private void pic5_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-                  fMove(5, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-      
+            fMove(5, ref bAbort);
+
         }
 
         private void pic6_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-                  fMove(6, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-         
+            fMove(6, ref bAbort);
+
         }
 
         private void pic7_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-                 fMove(7, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-      
+            fMove(7, ref bAbort);
+
         }
 
         private void pic8_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-                fMove(8, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-       
+            fMove(8, ref bAbort);
+
         }
 
         private void pic9_Click(object sender, EventArgs e)
         {
             bool bAbort = false;
 
-                fMove(9, ref bAbort);
-                if (!bAbort)
-                {
-                    fRotateTurn();
-                }
-                 }
+            fMove(9, ref bAbort);
+        }
     }
 }

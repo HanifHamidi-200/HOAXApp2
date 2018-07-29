@@ -100,6 +100,7 @@
             this.picb11 = new System.Windows.Forms.PictureBox();
             this.btnSparksmog = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnComply = new System.Windows.Forms.Button();
             this.btnReroll = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
             this.btnQNext = new System.Windows.Forms.Button();
@@ -168,7 +169,6 @@
             this.pic31 = new System.Windows.Forms.PictureBox();
             this.pic21 = new System.Windows.Forms.PictureBox();
             this.pic11 = new System.Windows.Forms.PictureBox();
-            this.btnComply = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picb18)).BeginInit();
@@ -317,6 +317,7 @@
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "kontrol";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button3
             // 
@@ -1169,6 +1170,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "skroll";
             // 
+            // btnComply
+            // 
+            this.btnComply.Location = new System.Drawing.Point(24, 127);
+            this.btnComply.Name = "btnComply";
+            this.btnComply.Size = new System.Drawing.Size(107, 40);
+            this.btnComply.TabIndex = 31;
+            this.btnComply.Text = "comply";
+            this.btnComply.UseVisualStyleBackColor = true;
+            this.btnComply.Click += new System.EventHandler(this.btnComply_Click);
+            // 
             // btnReroll
             // 
             this.btnReroll.Location = new System.Drawing.Point(24, 81);
@@ -1995,16 +2006,6 @@
             this.pic11.TabIndex = 2;
             this.pic11.TabStop = false;
             this.pic11.Click += new System.EventHandler(this.pic11_Click);
-            // 
-            // btnComply
-            // 
-            this.btnComply.Location = new System.Drawing.Point(24, 127);
-            this.btnComply.Name = "btnComply";
-            this.btnComply.Size = new System.Drawing.Size(107, 40);
-            this.btnComply.TabIndex = 31;
-            this.btnComply.Text = "comply";
-            this.btnComply.UseVisualStyleBackColor = true;
-            this.btnComply.Click += new System.EventHandler(this.btnComply_Click);
             // 
             // fSub3
             // 

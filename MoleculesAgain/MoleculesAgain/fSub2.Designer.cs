@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fSub2));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSparksmog = new System.Windows.Forms.Button();
-            this.btnCarbridge2 = new System.Windows.Forms.Button();
             this.btnCarbridge1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblScore = new System.Windows.Forms.Label();
@@ -173,8 +171,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.groupBox1.Controls.Add(this.btnSparksmog);
-            this.groupBox1.Controls.Add(this.btnCarbridge2);
             this.groupBox1.Controls.Add(this.btnCarbridge1);
             this.groupBox1.Location = new System.Drawing.Point(592, 37);
             this.groupBox1.Name = "groupBox1";
@@ -183,29 +179,11 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "kontrol";
             // 
-            // btnSparksmog
-            // 
-            this.btnSparksmog.Location = new System.Drawing.Point(20, 155);
-            this.btnSparksmog.Name = "btnSparksmog";
-            this.btnSparksmog.Size = new System.Drawing.Size(107, 40);
-            this.btnSparksmog.TabIndex = 3;
-            this.btnSparksmog.Text = "sparksmog1";
-            this.btnSparksmog.UseVisualStyleBackColor = true;
-            // 
-            // btnCarbridge2
-            // 
-            this.btnCarbridge2.Location = new System.Drawing.Point(20, 81);
-            this.btnCarbridge2.Name = "btnCarbridge2";
-            this.btnCarbridge2.Size = new System.Drawing.Size(107, 40);
-            this.btnCarbridge2.TabIndex = 2;
-            this.btnCarbridge2.Text = "carbridge2";
-            this.btnCarbridge2.UseVisualStyleBackColor = true;
-            // 
             // btnCarbridge1
             // 
             this.btnCarbridge1.Location = new System.Drawing.Point(20, 35);
             this.btnCarbridge1.Name = "btnCarbridge1";
-            this.btnCarbridge1.Size = new System.Drawing.Size(107, 40);
+            this.btnCarbridge1.Size = new System.Drawing.Size(47, 40);
             this.btnCarbridge1.TabIndex = 1;
             this.btnCarbridge1.Text = "carbridge1";
             this.btnCarbridge1.UseVisualStyleBackColor = true;
@@ -1061,8 +1039,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnSparksmog;
-        private System.Windows.Forms.Button btnCarbridge2;
         private System.Windows.Forms.Button btnCarbridge1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lblScore;

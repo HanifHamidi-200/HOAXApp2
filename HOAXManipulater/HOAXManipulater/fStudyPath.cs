@@ -52,8 +52,10 @@ namespace HOAXManipulater
 
             private void fStudyPath_Load(object sender, EventArgs e)
         {
+            Random rnd1 = new Random();
             mnItem = 1;
-            mnRotate = 1;
+            mnRotate = rnd1.Next(1,5);
+            btnRotate.Text = "Rotate = " + Convert.ToString(mnRotate);
             lstChoose.SelectedIndex = 0;
         }
     }

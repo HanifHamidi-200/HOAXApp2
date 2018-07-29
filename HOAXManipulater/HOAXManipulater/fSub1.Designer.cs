@@ -39,9 +39,6 @@
             this.pic9 = new System.Windows.Forms.PictureBox();
             this.pic8 = new System.Windows.Forms.PictureBox();
             this.pic7 = new System.Windows.Forms.PictureBox();
-            this.btnUndo = new System.Windows.Forms.Button();
-            this.btnAuto = new System.Windows.Forms.Button();
-            this.btnRandom = new System.Windows.Forms.Button();
             this.btnYOU1 = new System.Windows.Forms.Button();
             this.btnYOU2 = new System.Windows.Forms.Button();
             this.btnYOU3 = new System.Windows.Forms.Button();
@@ -80,7 +77,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.48485F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.51515F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel1.Controls.Add(this.pic3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.pic2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.pic1, 0, 2);
@@ -90,9 +87,9 @@
             this.tableLayoutPanel1.Controls.Add(this.pic9, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.pic8, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.pic7, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnUndo, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnAuto, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnRandom, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnYOU3, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnYOU1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnYOU2, 1, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(288, 46);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -107,7 +104,7 @@
             // pic3
             // 
             this.pic3.Image = ((System.Drawing.Image)(resources.GetObject("pic3.Image")));
-            this.pic3.Location = new System.Drawing.Point(162, 122);
+            this.pic3.Location = new System.Drawing.Point(161, 122);
             this.pic3.Name = "pic3";
             this.pic3.Size = new System.Drawing.Size(44, 47);
             this.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -140,7 +137,7 @@
             // pic6
             // 
             this.pic6.Image = ((System.Drawing.Image)(resources.GetObject("pic6.Image")));
-            this.pic6.Location = new System.Drawing.Point(162, 66);
+            this.pic6.Location = new System.Drawing.Point(161, 66);
             this.pic6.Name = "pic6";
             this.pic6.Size = new System.Drawing.Size(44, 47);
             this.pic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -173,7 +170,7 @@
             // pic9
             // 
             this.pic9.Image = ((System.Drawing.Image)(resources.GetObject("pic9.Image")));
-            this.pic9.Location = new System.Drawing.Point(162, 3);
+            this.pic9.Location = new System.Drawing.Point(161, 3);
             this.pic9.Name = "pic9";
             this.pic9.Size = new System.Drawing.Size(44, 47);
             this.pic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,43 +200,12 @@
             this.pic7.TabStop = false;
             this.pic7.Click += new System.EventHandler(this.pic7_Click);
             // 
-            // btnUndo
-            // 
-            this.btnUndo.BackColor = System.Drawing.Color.Lime;
-            this.btnUndo.Location = new System.Drawing.Point(162, 188);
-            this.btnUndo.Name = "btnUndo";
-            this.btnUndo.Size = new System.Drawing.Size(51, 44);
-            this.btnUndo.TabIndex = 11;
-            this.btnUndo.Text = "UNDO";
-            this.btnUndo.UseVisualStyleBackColor = false;
-            // 
-            // btnAuto
-            // 
-            this.btnAuto.BackColor = System.Drawing.Color.Red;
-            this.btnAuto.Location = new System.Drawing.Point(80, 188);
-            this.btnAuto.Name = "btnAuto";
-            this.btnAuto.Size = new System.Drawing.Size(51, 44);
-            this.btnAuto.TabIndex = 10;
-            this.btnAuto.Text = "A";
-            this.btnAuto.UseVisualStyleBackColor = false;
-            // 
-            // btnRandom
-            // 
-            this.btnRandom.BackColor = System.Drawing.Color.Red;
-            this.btnRandom.Location = new System.Drawing.Point(3, 188);
-            this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(51, 44);
-            this.btnRandom.TabIndex = 9;
-            this.btnRandom.Text = "R";
-            this.btnRandom.UseVisualStyleBackColor = false;
-            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
-            // 
             // btnYOU1
             // 
-            this.btnYOU1.BackColor = System.Drawing.Color.Yellow;
-            this.btnYOU1.Location = new System.Drawing.Point(825, 46);
+            this.btnYOU1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnYOU1.Location = new System.Drawing.Point(3, 188);
             this.btnYOU1.Name = "btnYOU1";
-            this.btnYOU1.Size = new System.Drawing.Size(160, 37);
+            this.btnYOU1.Size = new System.Drawing.Size(56, 63);
             this.btnYOU1.TabIndex = 1;
             this.btnYOU1.Text = "YouAreX";
             this.btnYOU1.UseVisualStyleBackColor = false;
@@ -247,10 +213,10 @@
             // 
             // btnYOU2
             // 
-            this.btnYOU2.BackColor = System.Drawing.Color.Yellow;
-            this.btnYOU2.Location = new System.Drawing.Point(825, 89);
+            this.btnYOU2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnYOU2.Location = new System.Drawing.Point(80, 188);
             this.btnYOU2.Name = "btnYOU2";
-            this.btnYOU2.Size = new System.Drawing.Size(160, 37);
+            this.btnYOU2.Size = new System.Drawing.Size(62, 63);
             this.btnYOU2.TabIndex = 2;
             this.btnYOU2.Text = "YouAreO";
             this.btnYOU2.UseVisualStyleBackColor = false;
@@ -258,10 +224,10 @@
             // 
             // btnYOU3
             // 
-            this.btnYOU3.BackColor = System.Drawing.Color.Yellow;
-            this.btnYOU3.Location = new System.Drawing.Point(825, 132);
+            this.btnYOU3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnYOU3.Location = new System.Drawing.Point(161, 188);
             this.btnYOU3.Name = "btnYOU3";
-            this.btnYOU3.Size = new System.Drawing.Size(160, 37);
+            this.btnYOU3.Size = new System.Drawing.Size(56, 63);
             this.btnYOU3.TabIndex = 3;
             this.btnYOU3.Text = "YouAreNeither";
             this.btnYOU3.UseVisualStyleBackColor = false;
@@ -398,7 +364,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 403);
+            this.ClientSize = new System.Drawing.Size(822, 403);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -408,9 +374,6 @@
             this.Controls.Add(this.btnRestart4);
             this.Controls.Add(this.btnRestart2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnYOU3);
-            this.Controls.Add(this.btnYOU2);
-            this.Controls.Add(this.btnYOU1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fSub1";
             this.Text = "AskAI";
@@ -438,9 +401,6 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnUndo;
-        private System.Windows.Forms.Button btnAuto;
-        private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.Button btnYOU1;
         private System.Windows.Forms.Button btnYOU2;
         private System.Windows.Forms.Button btnYOU3;

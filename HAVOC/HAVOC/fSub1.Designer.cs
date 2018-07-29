@@ -33,6 +33,8 @@
             this.btnCard3 = new System.Windows.Forms.Button();
             this.btnCard4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnDatabaseNull = new System.Windows.Forms.Button();
+            this.txtDatabase = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnRed = new System.Windows.Forms.Button();
             this.btnDatabase = new System.Windows.Forms.Button();
@@ -45,16 +47,15 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnSkipPrevious = new System.Windows.Forms.Button();
-            this.txtDatabase = new System.Windows.Forms.TextBox();
-            this.btnDatabaseNull = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtHide1 = new System.Windows.Forms.TextBox();
-            this.txtHide3 = new System.Windows.Forms.TextBox();
-            this.txtHide4 = new System.Windows.Forms.TextBox();
-            this.txtHide2 = new System.Windows.Forms.TextBox();
             this.btnCheckClear = new System.Windows.Forms.Button();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.txtHide4 = new System.Windows.Forms.TextBox();
+            this.txtHide2 = new System.Windows.Forms.TextBox();
+            this.txtHide3 = new System.Windows.Forms.TextBox();
+            this.txtHide1 = new System.Windows.Forms.TextBox();
             this.lblScore = new System.Windows.Forms.Label();
+            this.txtCopy = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -107,6 +108,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.groupBox1.Controls.Add(this.txtCopy);
             this.groupBox1.Controls.Add(this.btnDatabaseNull);
             this.groupBox1.Controls.Add(this.txtDatabase);
             this.groupBox1.Controls.Add(this.btnClear);
@@ -118,6 +120,24 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
+            // 
+            // btnDatabaseNull
+            // 
+            this.btnDatabaseNull.BackColor = System.Drawing.Color.Red;
+            this.btnDatabaseNull.Location = new System.Drawing.Point(149, 43);
+            this.btnDatabaseNull.Name = "btnDatabaseNull";
+            this.btnDatabaseNull.Size = new System.Drawing.Size(33, 65);
+            this.btnDatabaseNull.TabIndex = 5;
+            this.btnDatabaseNull.Text = "N";
+            this.btnDatabaseNull.UseVisualStyleBackColor = false;
+            this.btnDatabaseNull.Click += new System.EventHandler(this.btnDatabaseNull_Click);
+            // 
+            // txtDatabase
+            // 
+            this.txtDatabase.Location = new System.Drawing.Point(188, 43);
+            this.txtDatabase.Name = "txtDatabase";
+            this.txtDatabase.Size = new System.Drawing.Size(140, 20);
+            this.txtDatabase.TabIndex = 4;
             // 
             // btnClear
             // 
@@ -250,24 +270,6 @@
             this.btnSkipPrevious.UseVisualStyleBackColor = false;
             this.btnSkipPrevious.Click += new System.EventHandler(this.btnSkipPrevious_Click);
             // 
-            // txtDatabase
-            // 
-            this.txtDatabase.Location = new System.Drawing.Point(188, 43);
-            this.txtDatabase.Name = "txtDatabase";
-            this.txtDatabase.Size = new System.Drawing.Size(140, 20);
-            this.txtDatabase.TabIndex = 4;
-            // 
-            // btnDatabaseNull
-            // 
-            this.btnDatabaseNull.BackColor = System.Drawing.Color.Red;
-            this.btnDatabaseNull.Location = new System.Drawing.Point(149, 43);
-            this.btnDatabaseNull.Name = "btnDatabaseNull";
-            this.btnDatabaseNull.Size = new System.Drawing.Size(33, 65);
-            this.btnDatabaseNull.TabIndex = 5;
-            this.btnDatabaseNull.Text = "N";
-            this.btnDatabaseNull.UseVisualStyleBackColor = false;
-            this.btnDatabaseNull.Click += new System.EventHandler(this.btnDatabaseNull_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -283,34 +285,6 @@
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Typing";
-            // 
-            // txtHide1
-            // 
-            this.txtHide1.Location = new System.Drawing.Point(23, 39);
-            this.txtHide1.Name = "txtHide1";
-            this.txtHide1.Size = new System.Drawing.Size(140, 20);
-            this.txtHide1.TabIndex = 5;
-            // 
-            // txtHide3
-            // 
-            this.txtHide3.Location = new System.Drawing.Point(174, 39);
-            this.txtHide3.Name = "txtHide3";
-            this.txtHide3.Size = new System.Drawing.Size(140, 20);
-            this.txtHide3.TabIndex = 6;
-            // 
-            // txtHide4
-            // 
-            this.txtHide4.Location = new System.Drawing.Point(174, 74);
-            this.txtHide4.Name = "txtHide4";
-            this.txtHide4.Size = new System.Drawing.Size(140, 20);
-            this.txtHide4.TabIndex = 8;
-            // 
-            // txtHide2
-            // 
-            this.txtHide2.Location = new System.Drawing.Point(23, 74);
-            this.txtHide2.Name = "txtHide2";
-            this.txtHide2.Size = new System.Drawing.Size(140, 20);
-            this.txtHide2.TabIndex = 7;
             // 
             // btnCheckClear
             // 
@@ -334,6 +308,34 @@
             this.btnCheck.UseVisualStyleBackColor = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
+            // txtHide4
+            // 
+            this.txtHide4.Location = new System.Drawing.Point(174, 74);
+            this.txtHide4.Name = "txtHide4";
+            this.txtHide4.Size = new System.Drawing.Size(140, 20);
+            this.txtHide4.TabIndex = 8;
+            // 
+            // txtHide2
+            // 
+            this.txtHide2.Location = new System.Drawing.Point(23, 74);
+            this.txtHide2.Name = "txtHide2";
+            this.txtHide2.Size = new System.Drawing.Size(140, 20);
+            this.txtHide2.TabIndex = 7;
+            // 
+            // txtHide3
+            // 
+            this.txtHide3.Location = new System.Drawing.Point(174, 39);
+            this.txtHide3.Name = "txtHide3";
+            this.txtHide3.Size = new System.Drawing.Size(140, 20);
+            this.txtHide3.TabIndex = 6;
+            // 
+            // txtHide1
+            // 
+            this.txtHide1.Location = new System.Drawing.Point(23, 39);
+            this.txtHide1.Name = "txtHide1";
+            this.txtHide1.Size = new System.Drawing.Size(140, 20);
+            this.txtHide1.TabIndex = 5;
+            // 
             // lblScore
             // 
             this.lblScore.AutoSize = true;
@@ -343,6 +345,15 @@
             this.lblScore.Size = new System.Drawing.Size(55, 15);
             this.lblScore.TabIndex = 10;
             this.lblScore.Text = "Score = 0";
+            // 
+            // txtCopy
+            // 
+            this.txtCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtCopy.Location = new System.Drawing.Point(188, 83);
+            this.txtCopy.Name = "txtCopy";
+            this.txtCopy.Size = new System.Drawing.Size(140, 167);
+            this.txtCopy.TabIndex = 6;
+            this.txtCopy.Text = "";
             // 
             // fSub1
             // 
@@ -400,5 +411,6 @@
         private System.Windows.Forms.Button btnCheckClear;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.RichTextBox txtCopy;
     }
 }

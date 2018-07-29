@@ -62,7 +62,7 @@
             "[22] CornerStart, try4",
             "[23] CornerStart, try8",
             "[24] CornerStart, try6"});
-            this.lstChoose.Location = new System.Drawing.Point(37, 64);
+            this.lstChoose.Location = new System.Drawing.Point(138, 63);
             this.lstChoose.Name = "lstChoose";
             this.lstChoose.Size = new System.Drawing.Size(464, 264);
             this.lstChoose.TabIndex = 0;
@@ -71,7 +71,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 38);
+            this.label1.Location = new System.Drawing.Point(135, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 1;
@@ -79,22 +79,24 @@
             // 
             // btnRotate
             // 
-            this.btnRotate.Location = new System.Drawing.Point(568, 42);
+            this.btnRotate.BackColor = System.Drawing.Color.Lime;
+            this.btnRotate.Location = new System.Drawing.Point(23, 37);
             this.btnRotate.Name = "btnRotate";
-            this.btnRotate.Size = new System.Drawing.Size(149, 52);
+            this.btnRotate.Size = new System.Drawing.Size(90, 85);
             this.btnRotate.TabIndex = 2;
             this.btnRotate.Text = "Rotate = 1";
-            this.btnRotate.UseVisualStyleBackColor = true;
+            this.btnRotate.UseVisualStyleBackColor = false;
             this.btnRotate.Click += new System.EventHandler(this.btnRotate_Click);
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(568, 211);
+            this.btnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnOK.Location = new System.Drawing.Point(639, 37);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(149, 52);
+            this.btnOK.Size = new System.Drawing.Size(101, 85);
             this.btnOK.TabIndex = 3;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Text = "close";
+            this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // fStudyPath
