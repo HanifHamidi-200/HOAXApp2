@@ -12,7 +12,7 @@ namespace RIME
 {
     public partial class fSub2 : Form
     {
-        private List<int> _count = new List<int> { 71, 104, 143, 33, 33, 38 ,104};
+        private List<int> _count = new List<int> { 71, 104, 143, 33, 33, 38 ,26};
         private List<String> _data1 = new List<String> { null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
         private List<String> _data2 = new List<String> { null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
         private List<String> _data3 = new List<String> { null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
@@ -22,11 +22,12 @@ namespace RIME
         private List<String> _lookup4 = new List<String> { "a", "b", "d", "e", "f", "g", "i", "j", "ja", "je", "jo", "ju", "k", "l", "m", "n", "n2", "n3", "n4", "o", "p", "r", "s", "sh", "shch", "t", "tch", "ts", "u", "v", "x", "z", "zch", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
         private List<String> _lookup5 = new List<String> { "a", "b", "ch", "che", "d", "dz", "e", "g", "gh", "h", "i", "j", "ke", "kh", "kh2", "l", "m", "n", "o", "pe", "ph", "qe", "r", "s", "sh", "te", "th", "tse", "tsh", "u", "v", "z", "zh", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
         private List<String> _lookup6 = new List<String> { "b", "bha", "ca", "cha", "da", "da2", "dha", "dha2", "ga", "gha", "ha", "ja", "jha", "ka", "kha", "la", "la2", "la3", "ma", "na", "na2", "na3", "nya", "nya2", "pa", "pha", "ra", "ra2", "sa", "sa2", "sae", "ta", "ta2", "ta3", "tha", "tha2", "va", "ya", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
-        private List<String> _lookup7 = new List<String> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null};
+        private List<String> _lookup7 = new List<String> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
         private List<int> _place1 = new List<int> { 0, 0, 0, 0, 0 };
         private List<int> _place2 = new List<int> { 0, 0, 0, 0, 0 };
         private List<int> _place3 = new List<int> { 0, 0, 0, 0, 0 };
         private List<int> _place4 = new List<int> { 0, 0, 0, 0, 0 };
+        private List<int> _placecount= new List<int> { 0, 0, 0, 0 };
         private List<int> _mnMode = new List<int> { 0, 0, 0, 0 };
         private List<String> _msRealAnswer = new List<String> { null,null,null,null };
         private String msYourAnswer;
@@ -35,6 +36,7 @@ namespace RIME
         {
             Random rnd1 = new Random();
             int nMode2;
+            String sText=null;
 
             msYourAnswer = "     ";
     
@@ -44,11 +46,12 @@ namespace RIME
                 nMode2 = rnd1.Next(1, 8);
                 _mnMode[nMode-1] = nMode2;
                 _msRealAnswer[nMode - 1] = "     ";
+                _placecount[nMode - 1] = _count[nMode2 - 1];
                 for (int i = 1; i <= 150; i++)
                 {
                     _data1[i - 1] = null;
                     _data3[i - 1] = null;
-                    switch (nMode)
+                    switch (nMode2)
                     {
                         case 1:
                             _data2[i - 1] = _lookup1[i - 1];
@@ -74,25 +77,31 @@ namespace RIME
                     }
                 }
 
-
+                sText = null;
                 for (int i = 1; i <= 5; i++)
                 {
                     switch (nMode)
                     {
                         case 1:
                             _place1[i - 1] = rnd1.Next(1, _count[nMode2 - 1]);
+                            sText = sText + _data2[_place1[i - 1]];
                             break;
                         case 2:
                             _place2[i - 1] = rnd1.Next(1, _count[nMode2 - 1]);
+                            sText = sText + _data2[_place2[i - 1]];
                             break;
                         case 3:
                             _place3[i - 1] = rnd1.Next(1, _count[nMode2 - 1]);
+                            sText = sText + _data2[_place3[i - 1]];
                             break;
                         default:
                             _place4[i - 1] = rnd1.Next(1, _count[nMode2 - 1]);
+                            sText = sText + _data2[_place4[i - 1]];
                             break;
                     }
+
                 }
+                _msRealAnswer[nMode - 1] = sText;
             }
 
             txtYourAnswer.Text = msYourAnswer;
@@ -231,7 +240,7 @@ namespace RIME
 
             //Box2
 
-            switch (_mnMode[0])
+            switch (_mnMode[1])
             {
                 case 1:
                     nType = _place1[0];
@@ -356,7 +365,7 @@ namespace RIME
 
             //Box3
 
-            switch (_mnMode[0])
+            switch (_mnMode[2])
             {
                 case 1:
                     nType = _place1[0];
@@ -481,7 +490,7 @@ namespace RIME
 
             //Box4
 
-            switch (_mnMode[0])
+            switch (_mnMode[3])
             {
                 case 1:
                     nType = _place1[0];
@@ -5496,5 +5505,93 @@ namespace RIME
             fUpdateDisplay();
 
         }
+
+        private void opt1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            int nWordmode;
+            String sText;
+
+            if (txtWordmode.Text == null)
+            {
+                if (opt1.Checked)
+                {
+                    nWordmode = 1;
+                }
+                else
+                {
+                    if (opt2.Checked)
+                    {
+                        nWordmode = 2;
+
+                    }
+                    else
+                    {
+                        if (opt3.Checked)
+                        {
+                            nWordmode = 3;
+
+                        }
+                        else
+                        {
+                            nWordmode = 4;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if (txtWordmode.Text.Length == 0)
+                {
+                    nWordmode = 1;
+                }
+                else
+                {            
+                nWordmode = Convert.ToInt32(txtWordmode.Text);
+                if (nWordmode > 4)
+                {
+                    nWordmode = 4;
+                }
+                    if (nWordmode == -0)
+                    {
+                        nWordmode = 1;
+                    }
+                }
+            }
+            
+            msYourAnswer = txtYourAnswer.Text;
+
+            if (msYourAnswer == _msRealAnswer[nWordmode-1])
+            {
+                for (int i = 1; i <= 5; i++)
+                {
+                    switch (nWordmode)
+                    {
+                        case 1:
+                            _place1[i - 1] = _placecount[0];
+                            break;
+                        case 2:
+                            _place2[i - 1] = _placecount[1];
+                            break;
+                        case 3:
+                            _place3[i - 1] = _placecount[2];
+                            break;
+                        default:
+                            _place4[i - 1] = _placecount[3];
+                            break;
+                    }
+                }
+                fUpdateDisplay();
+            }
+            else
+            {
+                sText = msYourAnswer + " NOTEQUALTO " + _msRealAnswer[nWordmode-1];
+                MessageBox.Show(sText, "Wrong!");
+            }
+            }
     }
 }

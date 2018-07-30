@@ -58,13 +58,14 @@
             this.pic45 = new System.Windows.Forms.PictureBox();
             this.opt4 = new System.Windows.Forms.RadioButton();
             this.fraYourAnswer = new System.Windows.Forms.GroupBox();
-            this.txtYourAnswer = new System.Windows.Forms.TextBox();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.txtYourAnswer = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnQNext = new System.Windows.Forms.Button();
             this.btnLookup = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtTypos = new System.Windows.Forms.RichTextBox();
-            this.btnQNext = new System.Windows.Forms.Button();
+            this.txtWordmode = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic12)).BeginInit();
@@ -104,6 +105,7 @@
             this.opt1.TabStop = true;
             this.opt1.Text = "Word1";
             this.opt1.UseVisualStyleBackColor = true;
+            this.opt1.CheckedChanged += new System.EventHandler(this.opt1_CheckedChanged);
             // 
             // flowLayoutPanel1
             // 
@@ -393,6 +395,7 @@
             // fraYourAnswer
             // 
             this.fraYourAnswer.BackColor = System.Drawing.Color.Lime;
+            this.fraYourAnswer.Controls.Add(this.txtWordmode);
             this.fraYourAnswer.Controls.Add(this.btnCheck);
             this.fraYourAnswer.Controls.Add(this.txtYourAnswer);
             this.fraYourAnswer.Location = new System.Drawing.Point(29, 222);
@@ -402,13 +405,6 @@
             this.fraYourAnswer.TabStop = false;
             this.fraYourAnswer.Text = "YourAnswer";
             // 
-            // txtYourAnswer
-            // 
-            this.txtYourAnswer.Location = new System.Drawing.Point(23, 31);
-            this.txtYourAnswer.Name = "txtYourAnswer";
-            this.txtYourAnswer.Size = new System.Drawing.Size(209, 20);
-            this.txtYourAnswer.TabIndex = 0;
-            // 
             // btnCheck
             // 
             this.btnCheck.Location = new System.Drawing.Point(23, 57);
@@ -417,6 +413,14 @@
             this.btnCheck.TabIndex = 1;
             this.btnCheck.Text = "check";
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // txtYourAnswer
+            // 
+            this.txtYourAnswer.Location = new System.Drawing.Point(23, 31);
+            this.txtYourAnswer.Name = "txtYourAnswer";
+            this.txtYourAnswer.Size = new System.Drawing.Size(209, 20);
+            this.txtYourAnswer.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -429,6 +433,16 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
+            // 
+            // btnQNext
+            // 
+            this.btnQNext.Location = new System.Drawing.Point(28, 73);
+            this.btnQNext.Name = "btnQNext";
+            this.btnQNext.Size = new System.Drawing.Size(109, 34);
+            this.btnQNext.TabIndex = 3;
+            this.btnQNext.Text = "&QNext";
+            this.btnQNext.UseVisualStyleBackColor = true;
+            this.btnQNext.Click += new System.EventHandler(this.btnQNext_Click);
             // 
             // btnLookup
             // 
@@ -458,15 +472,12 @@
             this.txtTypos.TabIndex = 0;
             this.txtTypos.Text = "";
             // 
-            // btnQNext
+            // txtWordmode
             // 
-            this.btnQNext.Location = new System.Drawing.Point(28, 73);
-            this.btnQNext.Name = "btnQNext";
-            this.btnQNext.Size = new System.Drawing.Size(109, 34);
-            this.btnQNext.TabIndex = 3;
-            this.btnQNext.Text = "&QNext";
-            this.btnQNext.UseVisualStyleBackColor = true;
-            this.btnQNext.Click += new System.EventHandler(this.btnQNext_Click);
+            this.txtWordmode.Location = new System.Drawing.Point(238, 31);
+            this.txtWordmode.Name = "txtWordmode";
+            this.txtWordmode.Size = new System.Drawing.Size(43, 20);
+            this.txtWordmode.TabIndex = 2;
             // 
             // fSub2
             // 
@@ -558,5 +569,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RichTextBox txtTypos;
         private System.Windows.Forms.Button btnQNext;
+        private System.Windows.Forms.TextBox txtWordmode;
     }
 }
