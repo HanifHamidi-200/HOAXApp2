@@ -1,0 +1,15 @@
+C:\Users\hanif\Desktop\AJSTP\AJSTP\bin\Debug\AJSTP.exe.config
+C:\Users\hanif\Desktop\AJSTP\AJSTP\bin\Debug\AJSTP.exe.manifest
+C:\Users\hanif\Desktop\AJSTP\AJSTP\bin\Debug\AJSTP.application
+C:\Users\hanif\Desktop\AJSTP\AJSTP\bin\Debug\AJSTP.exe
+C:\Users\hanif\Desktop\AJSTP\AJSTP\bin\Debug\AJSTP.pdb
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.csprojAssemblyReference.cache
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.Form1.resources
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.Properties.Resources.resources
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.csproj.GenerateResource.cache
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.csproj.CoreCompileInputs.cache
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.exe.manifest
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.application
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.exe
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.pdb
+C:\Users\hanif\Desktop\AJSTP\AJSTP\obj\Debug\AJSTP.fSub1.resources

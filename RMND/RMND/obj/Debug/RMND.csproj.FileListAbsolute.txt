@@ -1,0 +1,17 @@
+C:\Users\hanif\Desktop\RMND\RMND\bin\Debug\RMND.exe.config
+C:\Users\hanif\Desktop\RMND\RMND\bin\Debug\RMND.exe
+C:\Users\hanif\Desktop\RMND\RMND\bin\Debug\RMND.pdb
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.csprojAssemblyReference.cache
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.Form1.resources
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.fSub2.resources
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.Properties.Resources.resources
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.csproj.GenerateResource.cache
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.csproj.CoreCompileInputs.cache
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.exe
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.pdb
+C:\Users\hanif\Desktop\RMND\RMND\bin\Debug\RMND.exe.manifest
+C:\Users\hanif\Desktop\RMND\RMND\bin\Debug\RMND.application
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.exe.manifest
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.application
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.fSub1.resources
+C:\Users\hanif\Desktop\RMND\RMND\obj\Debug\RMND.fSub3.resources

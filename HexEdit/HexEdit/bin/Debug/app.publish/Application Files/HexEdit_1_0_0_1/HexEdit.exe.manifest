@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="HexEdit.exe" version="1.0.0.1" publicKeyToken="b90368f1291849b7" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F BoulderLogic.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="HexEdit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="HexEdit.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HexEdit.exe" size="37856">
+      <assemblyIdentity name="HexEdit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>52dQMqHWQxhwCgxC1cpvVoqtlVo/bUKFPZEl6lAF3lI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="F BoulderLogic.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>piNGcUr+LugKtl1hhLr7MhOutSmtNlGPvsXiyAwpGUw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="HexEdit.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="4056c2008a6b8381b48f748681a52560dc7fa689" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iVDbP8H4T8hGRhaV/ekpxCFObKK2VbXY2FL4fEHPjaQ=</DigestValue></Reference></SignedInfo><SignatureValue>NsXnl3xeimn5c8N23qAs/mNP3qwHKeFkgVNekQP4VaesooVJ5C3Ao5UbI0kbitO7xwrJ3E305bjNI7cHlNYAU9T1rTcpoDj7rCVU/kjo0k163VT2qnCCIR7aFsFIS+XayH8T7WbDi1cKfCwKCF7Gwp72FN0VaBvNwAtbf+7A+wk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s5OA0YHDpXk+xhOCjxTYFeKFfbJudcq6kuescYe5nYbMd94ObhOhwOh097wks8IJtW5nr90llFjdArcZeymtXZ7I5A2VoRuSV54DgVLdLbCUlH9dyjfza7nkLW6kah9tHKWXfhoxKeWyvafk2pizqQTqsgYxoNQhmhpA0ztYXSk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a48dcf417cf852d8d8b555b6a26c4e21c429e9fd95164646c84ff8c13fdb5089" Description="" Url=""><as:assemblyIdentity name="HexEdit.exe" version="1.0.0.1" publicKeyToken="b90368f1291849b7" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>KxmHwQqLdGbNCtYWGXn00FLWdzKsTmm8n5bc2K0H5VM=</DigestValue></Reference></SignedInfo><SignatureValue>J//8LKeK/6FvuVe9dnaIriRD8cz1wEkJ1pD9NFiVDoIFjiEliBICkjU3asau3+C0SdiVEjD26oSCgW6TF27TLUho2+94kiTAIVxIdUzZYLJEgcpl8lRzt0Twxn8lXlaQHMKQEkPJbRX8FwvFZ9jiy54pqCnpquEjaoLVYUqaJSs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s5OA0YHDpXk+xhOCjxTYFeKFfbJudcq6kuescYe5nYbMd94ObhOhwOh097wks8IJtW5nr90llFjdArcZeymtXZ7I5A2VoRuSV54DgVLdLbCUlH9dyjfza7nkLW6kah9tHKWXfhoxKeWyvafk2pizqQTqsgYxoNQhmhpA0ztYXSk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQItswxfcZl6xFowRstsr3oTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwNjI5MTk0OTA0WhcNMTkwNjMwMDE0OTA0WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALOTgNGBw6V5PsYTgo8U2BXihX2ybnXKupLnrHGHuZ2GzHfeDm4TocDodPe8JLPCCbVuZ6/dJZRY3QK3GXsprV2eyOQNlaEbkleeA4FS3S2wlJR/Xco382u55C1upGofbRyll34aMSnlsr2n5NqYs6kE6rIGMaDUIZoaQNM7WF0pAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAEIUuuGrk7dwybBgowedD3HiEsOwls1la6nOwbfasSSCZ5peA5L3zQVquOVOMezAUgX0g2ZXf5f4EwyIqbIPvAVb2rcwnF/7jEGn3iWiYlJ1HmSN4H1hnV/Bul7ScdMPmJBKccBwy8cA3hTZDXPXGLpIbF+Fx73l5GvmB7Dew5ao=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
