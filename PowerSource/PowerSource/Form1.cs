@@ -67,7 +67,7 @@ namespace PowerSource
                 mbRead = false;
                 switch (nCol)
                 {
-                    case 4:
+                     case 4:
                         nIndex = _attach4[nRow - 1];
                         if (nIndex == 7)
                         {
@@ -81,6 +81,32 @@ namespace PowerSource
                             return;
                         }
                         break;
+                    default:
+                        switch (nCol)
+                        {
+                            case 1:
+                                _col1[nRow - 1] = mnSlot;
+                                break;
+                            case 2:
+                                _col2[nRow - 1] = mnSlot;
+                                break;
+                            case 3:
+                                _col3[nRow - 1] = mnSlot;
+                                break;
+                            case 6:
+                                _col6[nRow - 1] = mnSlot;
+                                break;
+                            case 7:
+                                _col7[nRow - 1] = mnSlot;
+                                break;
+                           default:
+                                _col8[nRow - 1] = mnSlot;
+                                break;
+                        }
+                        fUpdateDisplay();
+                        return;
+                        break;
+
                 }
                 switch (nIndex)
                 {
@@ -134,7 +160,7 @@ namespace PowerSource
                     }
                     else
                     {
-                        if (_col4[mnRow - 1] >= 10)
+                        if (_col4[mnRow - 1] >= 16)
                         {
                             sReply = MessageBox.Show(this, "Override?", "AddNode", MessageBoxButtons.YesNo);
                             if (sReply == DialogResult.Yes)
@@ -154,7 +180,7 @@ namespace PowerSource
                     if (mbAttach)
                     {
                         mbAttach = false;
-                        if (_col5[mnRow - 1] >= 10)
+                        if (_col5[mnRow - 1] >= 16)
                         {
                             _attach5[mnRow - 1] = mnItem;
                         }
@@ -166,7 +192,7 @@ namespace PowerSource
                     }
                     else
                     {
-                        if (_col5[mnRow - 1] >= 10)
+                        if (_col5[mnRow - 1] >= 16)
                         {
                             sReply = MessageBox.Show(this, "Override?", "AddNode", MessageBoxButtons.YesNo);
                             if (sReply == DialogResult.Yes)
@@ -212,7 +238,7 @@ namespace PowerSource
                 nNumber = rnd1.Next(1, 10);
                 if (nNumber <= 4)
                 {
-                    _digital [i - 1] = 9;
+                    _digital [i - 1] = 10;
                 }
                 else
                 {
@@ -225,13 +251,13 @@ namespace PowerSource
                 _col1[i - 1] = 2;
                 _col2[i - 1] = 2;
                 _col3[i - 1] = 2;
-                _col4[i - 1] = 4;
-                _col5[i - 1] = 4;
+                _col4[i - 1] = 5;
+                _col5[i - 1] = 5;
                 _col6[i - 1] = 2;
                 _col7[i - 1] = 2;
                 _col8[i - 1] = 2;
-                _attach4[i - 1] = 10;
-                _attach5[i - 1] = 10;
+                _attach4[i - 1] = 16;
+                _attach5[i - 1] = 16;
             }
 
             for (int i = 1; i <= 8; i++)
@@ -241,7 +267,7 @@ namespace PowerSource
                 {
                     nCol = 1;
                     nRow = i;
-                    nType = rnd1.Next(5, 9);
+                    nType = rnd1.Next(6, 10);
                     switch (nCol)
                     {
                         case 1:
@@ -278,7 +304,7 @@ namespace PowerSource
                 {
                     nCol = 3;
                     nRow = i;
-                    nType = rnd1.Next(5, 9);
+                    nType = rnd1.Next(6, 10);
                     switch (nCol)
                     {
                         case 1:
@@ -315,7 +341,7 @@ namespace PowerSource
                 {
                     nCol = 6;
                     nRow = i;
-                    nType = rnd1.Next(5, 9);
+                    nType = rnd1.Next(6, 10);
                     switch (nCol)
                     {
                         case 1:
@@ -352,7 +378,7 @@ namespace PowerSource
                 {
                     nCol = 8;
                     nRow = i;
-                    nType = rnd1.Next(5, 9);
+                    nType = rnd1.Next(6, 10);
                     switch (nCol)
                     {
                         case 1:
@@ -407,82 +433,124 @@ namespace PowerSource
             PictureBox picture4 = new PictureBox
             {
                 Name = "pictureBox4",
-                Image = Image.FromFile(@"F chip.png"),
+                Image = Image.FromFile(@"F Capaciter.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture5 = new PictureBox
             {
                 Name = "pictureBox5",
-                Image = Image.FromFile(@"F colour1.png"),
+                Image = Image.FromFile(@"F chip.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture6 = new PictureBox
             {
                 Name = "pictureBox6",
-                Image = Image.FromFile(@"F colour2.png"),
+                Image = Image.FromFile(@"F colour1.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture7 = new PictureBox
             {
                 Name = "pictureBox7",
-                Image = Image.FromFile(@"F colour3.png"),
+                Image = Image.FromFile(@"F colour2.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture8 = new PictureBox
             {
                 Name = "pictureBox8",
-                Image = Image.FromFile(@"F colour4.png"),
+                Image = Image.FromFile(@"F colour3.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture9 = new PictureBox
             {
                 Name = "pictureBox9",
-                Image = Image.FromFile(@"F digital_out.png"),
+                Image = Image.FromFile(@"F colour4.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture10 = new PictureBox
             {
                 Name = "pictureBox10",
-                Image = Image.FromFile(@"F slot1.png"),
+                Image = Image.FromFile(@"F digital_out.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture11 = new PictureBox
             {
                 Name = "pictureBox11",
-                Image = Image.FromFile(@"F slot2.png"),
+                Image = Image.FromFile(@"F Diode.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture12 = new PictureBox
             {
                 Name = "pictureBox12",
-                Image = Image.FromFile(@"F slot3.png"),
+                Image = Image.FromFile(@"F R30.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture13 = new PictureBox
             {
                 Name = "pictureBox13",
-                Image = Image.FromFile(@"F slot4.png"),
+                Image = Image.FromFile(@"F R50.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture14 = new PictureBox
             {
                 Name = "pictureBox14",
-                Image = Image.FromFile(@"F slot5.png"),
+                Image = Image.FromFile(@"F R80.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture15 = new PictureBox
             {
                 Name = "pictureBox15",
-                Image = Image.FromFile(@"F slot6.png"),
+                Image = Image.FromFile(@"F R88.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture16 = new PictureBox
             {
                 Name = "pictureBox16",
+                Image = Image.FromFile(@"F slot1.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture17 = new PictureBox
+            {
+                Name = "pictureBox17",
+                Image = Image.FromFile(@"F slot2.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture18 = new PictureBox
+            {
+                Name = "pictureBox18",
+                Image = Image.FromFile(@"F slot3.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture19 = new PictureBox
+            {
+                Name = "pictureBox19",
+                Image = Image.FromFile(@"F slot4.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture20 = new PictureBox
+            {
+                Name = "pictureBox20",
+                Image = Image.FromFile(@"F slot5.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture21 = new PictureBox
+            {
+                Name = "pictureBox21",
+                Image = Image.FromFile(@"F slot6.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture22 = new PictureBox
+            {
+                Name = "pictureBox22",
+                Image = Image.FromFile(@"F Transister.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture23 = new PictureBox
+            {
+                Name = "pictureBox23",
                 Image = Image.FromFile(@"F NullGate.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
-        
+
             switch (nValue)
             {
                 case 1:
@@ -920,6 +988,7 @@ namespace PowerSource
             mnCol = 1;
             mnRow = 1;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -928,6 +997,7 @@ namespace PowerSource
             mnCol = 1;
             mnRow = 2;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -936,6 +1006,7 @@ namespace PowerSource
             mnCol = 1;
             mnRow = 3;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -944,6 +1015,7 @@ namespace PowerSource
             mnCol = 1;
             mnRow = 4;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -952,6 +1024,7 @@ namespace PowerSource
             mnCol = 1;
             mnRow = 5;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -960,6 +1033,7 @@ namespace PowerSource
             mnCol = 1;
             mnRow = 6;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -968,6 +1042,7 @@ namespace PowerSource
             mnCol = 1;
             mnRow = 7;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -976,6 +1051,7 @@ namespace PowerSource
             mnCol = 1;
             mnRow = 8;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -984,6 +1060,7 @@ namespace PowerSource
             mnCol = 2;
             mnRow = 1;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -992,6 +1069,7 @@ namespace PowerSource
             mnCol = 2;
             mnRow = 2;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1000,6 +1078,7 @@ namespace PowerSource
             mnCol = 2;
             mnRow = 3;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1008,6 +1087,7 @@ namespace PowerSource
             mnCol = 2;
             mnRow = 4;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1016,6 +1096,7 @@ namespace PowerSource
             mnCol = 2;
             mnRow = 5;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1024,6 +1105,7 @@ namespace PowerSource
             mnCol = 2;
             mnRow = 6;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1032,6 +1114,7 @@ namespace PowerSource
             mnCol = 2;
             mnRow = 7;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1040,6 +1123,7 @@ namespace PowerSource
             mnCol = 2;
             mnRow = 8;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1048,6 +1132,7 @@ namespace PowerSource
             mnCol = 3;
             mnRow = 1;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1056,6 +1141,7 @@ namespace PowerSource
             mnCol = 3;
             mnRow = 2;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1064,6 +1150,7 @@ namespace PowerSource
             mnCol = 3;
             mnRow = 3;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1072,6 +1159,7 @@ namespace PowerSource
             mnCol = 3;
             mnRow = 4;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1080,6 +1168,7 @@ namespace PowerSource
             mnCol = 3;
             mnRow = 5;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1088,6 +1177,7 @@ namespace PowerSource
             mnCol = 3;
             mnRow = 6;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1096,6 +1186,7 @@ namespace PowerSource
             mnCol = 3;
             mnRow = 7;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1104,6 +1195,7 @@ namespace PowerSource
             mnCol = 3;
             mnRow = 8;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1247,6 +1339,7 @@ namespace PowerSource
             mnCol = 6;
             mnRow = 1;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1255,6 +1348,7 @@ namespace PowerSource
             mnCol = 6;
             mnRow = 2;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1263,6 +1357,7 @@ namespace PowerSource
             mnCol = 6;
             mnRow = 3;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1271,6 +1366,7 @@ namespace PowerSource
             mnCol = 6;
             mnRow = 4;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1279,6 +1375,7 @@ namespace PowerSource
             mnCol = 6;
             mnRow = 5;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1287,6 +1384,7 @@ namespace PowerSource
             mnCol = 6;
             mnRow = 6;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1295,6 +1393,7 @@ namespace PowerSource
             mnCol = 6;
             mnRow = 7;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1303,6 +1402,7 @@ namespace PowerSource
             mnCol = 6;
             mnRow = 8;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1311,6 +1411,7 @@ namespace PowerSource
             mnCol = 7;
             mnRow = 1;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1319,6 +1420,7 @@ namespace PowerSource
             mnCol = 7;
             mnRow = 2;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1327,6 +1429,7 @@ namespace PowerSource
             mnCol = 7;
             mnRow = 3;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1335,6 +1438,7 @@ namespace PowerSource
             mnCol = 7;
             mnRow = 4;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1343,6 +1447,7 @@ namespace PowerSource
             mnCol = 7;
             mnRow = 5;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1351,6 +1456,7 @@ namespace PowerSource
             mnCol = 7;
             mnRow = 6;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1360,6 +1466,7 @@ namespace PowerSource
             mnRow = 7;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
 
+            fRead(mnCol, mnRow);
         }
 
         private void pic78_Click(object sender, EventArgs e)
@@ -1367,6 +1474,7 @@ namespace PowerSource
             mnCol = 7;
             mnRow = 8;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1375,6 +1483,7 @@ namespace PowerSource
             mnCol = 8;
             mnRow = 1;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1383,6 +1492,7 @@ namespace PowerSource
             mnCol = 8;
             mnRow = 2;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1391,6 +1501,7 @@ namespace PowerSource
             mnCol = 8;
             mnRow = 3;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1399,6 +1510,7 @@ namespace PowerSource
             mnCol = 8;
             mnRow = 4;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1407,6 +1519,7 @@ namespace PowerSource
             mnCol = 8;
             mnRow = 5;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1415,6 +1528,7 @@ namespace PowerSource
             mnCol = 8;
             mnRow = 6;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1423,6 +1537,7 @@ namespace PowerSource
             mnCol = 8;
             mnRow = 7;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
@@ -1431,37 +1546,38 @@ namespace PowerSource
             mnCol = 8;
             mnRow = 8;
             lblSelected.Text = "SELECTED = " + Convert.ToString(mnCol) + "," + Convert.ToString(mnRow);
+            fRead(mnCol, mnRow);
 
         }
 
         private void picSlot1_Click(object sender, EventArgs e)
         {
-            mnSlot = 10;
+            mnSlot = 16;
         }
 
         private void picSlot2_Click(object sender, EventArgs e)
         {
-            mnSlot = 11;
+            mnSlot = 17;
         }
 
         private void picSlot3_Click(object sender, EventArgs e)
         {
-            mnSlot = 12;
+            mnSlot = 18;
         }
 
         private void picSlot4_Click(object sender, EventArgs e)
         {
-            mnSlot = 13;
+            mnSlot = 19;
         }
 
         private void picSlot5_Click(object sender, EventArgs e)
         {
-            mnSlot = 14;
+            mnSlot = 20;
         }
 
         private void picSlot6_Click(object sender, EventArgs e)
         {
-            mnSlot = 15;
+            mnSlot = 21;
         }
 
         private void lstAttach_SelectedIndexChanged(object sender, EventArgs e)
@@ -1485,9 +1601,88 @@ namespace PowerSource
         {
             for (int i = 1; i <= 8; i++)
             {
-                _col4[i - 1] = 4;
-                _col5[i - 1] = 4;
-             }
+                switch (_col1[i - 1])
+                {
+                    case 4:
+                        _col1[i - 1] = 2;
+                        break;
+                    case 22:
+                        _col1[i - 1] = 2;
+                        break;
+                    case 12:
+                        _col1[i - 1] = 2;
+                        break;
+                    case 13:
+                        _col1[i - 1] = 2;
+                        break;
+                    case 14:
+                        _col1[i - 1] = 2;
+                        break;
+                    case 15:
+                        _col1[i - 1] = 2;
+                        break;
+                    case 11:
+                        _col1[i - 1] = 2;
+                        break;
+                    default:
+                        break;
+
+                }
+                switch (_col2[i - 1])
+                {
+                    case 4:
+                        _col2[i - 1] = 2;
+                        break;
+                    case 22:
+                        _col2[i - 1] = 2;
+                        break;
+                    case 12:
+                        _col2[i - 1] = 2;
+                        break;
+                    case 13:
+                        _col2[i - 1] = 2;
+                        break;
+                    case 14:
+                        _col2[i - 1] = 2;
+                        break;
+                    case 15:
+                        _col2[i - 1] = 2;
+                        break;
+                    case 11:
+                        _col2[i - 1] = 2;
+                        break;
+                    default:
+                        break;
+
+                }
+                switch (_col3[i - 1])
+                {
+                    case 4:
+                        _col3[i - 1] = 2;
+                        break;
+                    case 22:
+                        _col3[i - 1] = 2;
+                        break;
+                    case 12:
+                        _col3[i - 1] = 2;
+                        break;
+                    case 13:
+                        _col3[i - 1] = 2;
+                        break;
+                    case 14:
+                        _col3[i - 1] = 2;
+                        break;
+                    case 15:
+                        _col3[i - 1] = 2;
+                        break;
+                    case 11:
+                        _col3[i - 1] = 2;
+                        break;
+                    default:
+                        break;
+
+                }
+            }
             fUpdateDisplay();
         }
 
@@ -1609,6 +1804,153 @@ namespace PowerSource
         private void picDc_Click(object sender, EventArgs e)
         {
             fDigital(12);
+        }
+
+        private void btnClear2_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 8; i++)
+            {
+                _col4[i - 1] = 5;
+                _col5[i - 1] = 5;
+            }
+            fUpdateDisplay();
+        }
+
+        private void btnClear3_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 8; i++)
+            {
+                switch (_col6[i - 1])
+                {
+                    case 4:
+                        _col6[i - 1] = 2;
+                        break;
+                    case 22:
+                        _col6[i - 1] = 2;
+                        break;
+                    case 12:
+                        _col6[i - 1] = 2;
+                        break;
+                    case 13:
+                        _col6[i - 1] = 2;
+                        break;
+                    case 14:
+                        _col6[i - 1] = 2;
+                        break;
+                    case 15:
+                        _col6[i - 1] = 2;
+                        break;
+                    case 11:
+                        _col6[i - 1] = 2;
+                        break;
+                    default:
+                        break;
+
+                }
+                switch (_col7[i - 1])
+                {
+                    case 4:
+                        _col7[i - 1] = 2;
+                        break;
+                    case 22:
+                        _col7[i - 1] = 2;
+                        break;
+                    case 12:
+                        _col7[i - 1] = 2;
+                        break;
+                    case 13:
+                        _col7[i - 1] = 2;
+                        break;
+                    case 14:
+                        _col7[i - 1] = 2;
+                        break;
+                    case 15:
+                        _col7[i - 1] = 2;
+                        break;
+                    case 11:
+                        _col7[i - 1] = 2;
+                        break;
+                    default:
+                        break;
+
+                }
+                switch (_col8[i - 1])
+                {
+                    case 4:
+                        _col8[i - 1] = 2;
+                        break;
+                    case 22:
+                        _col8[i - 1] = 2;
+                        break;
+                    case 12:
+                        _col8[i - 1] = 2;
+                        break;
+                    case 13:
+                        _col8[i - 1] = 2;
+                        break;
+                    case 14:
+                        _col8[i - 1] = 2;
+                        break;
+                    case 15:
+                        _col8[i - 1] = 2;
+                        break;
+                    case 11:
+                        _col8[i - 1] = 2;
+                        break;
+                    default:
+                        break;
+
+                }
+            }
+            fUpdateDisplay();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            mnSlot = 4;
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            mnSlot = 22;
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            mnSlot = 12;
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            mnSlot = 13;
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            mnSlot = 14;
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            mnSlot = 15;
+
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            mnSlot = 11;
+
+        }
+
+        private void btnUpdateDisplay_Click(object sender, EventArgs e)
+        {
+            fUpdateDisplay();
+            fUpdateDisplay2();
         }
 
         private void btnAttach_Click(object sender, EventArgs e)

@@ -98,7 +98,7 @@
             this.btnQNext = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btnClear1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblSelected = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -144,6 +144,24 @@
             this.picDa = new System.Windows.Forms.PictureBox();
             this.picDb = new System.Windows.Forms.PictureBox();
             this.picDc = new System.Windows.Forms.PictureBox();
+            this.btnClear2 = new System.Windows.Forms.Button();
+            this.btnClear3 = new System.Windows.Forms.Button();
+            this.btnWriteups = new System.Windows.Forms.Button();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.btnUpdateDisplay = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic74)).BeginInit();
@@ -246,6 +264,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDc)).BeginInit();
+            this.flowLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -1049,7 +1075,7 @@
             this.btnQNext.Name = "btnQNext";
             this.btnQNext.Size = new System.Drawing.Size(100, 98);
             this.btnQNext.TabIndex = 30;
-            this.btnQNext.Text = "QNext";
+            this.btnQNext.Text = "&QNext";
             this.btnQNext.UseVisualStyleBackColor = false;
             this.btnQNext.Click += new System.EventHandler(this.btnQNext_Click);
             // 
@@ -1074,25 +1100,34 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.groupBox1.Controls.Add(this.btnClear);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.btnWriteups);
+            this.groupBox1.Controls.Add(this.btnClear3);
+            this.groupBox1.Controls.Add(this.btnClear2);
+            this.groupBox1.Controls.Add(this.btnClear1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblSelected);
             this.groupBox1.Location = new System.Drawing.Point(620, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(219, 143);
+            this.groupBox1.Size = new System.Drawing.Size(432, 143);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Marking";
             // 
-            // btnClear
+            // btnClear1
             // 
-            this.btnClear.Location = new System.Drawing.Point(21, 94);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(83, 24);
-            this.btnClear.TabIndex = 4;
-            this.btnClear.Text = "ClearAll";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear1.Location = new System.Drawing.Point(21, 94);
+            this.btnClear1.Name = "btnClear1";
+            this.btnClear1.Size = new System.Drawing.Size(54, 24);
+            this.btnClear1.TabIndex = 4;
+            this.btnClear1.Text = "Clear1";
+            this.btnClear1.UseVisualStyleBackColor = true;
+            this.btnClear1.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // label2
             // 
@@ -1123,7 +1158,7 @@
             this.flowLayoutPanel1.Controls.Add(this.picSlot4);
             this.flowLayoutPanel1.Controls.Add(this.picSlot5);
             this.flowLayoutPanel1.Controls.Add(this.picSlot6);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(104, 491);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 473);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(491, 68);
             this.flowLayoutPanel1.TabIndex = 33;
@@ -1247,7 +1282,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(179, 565);
+            this.pictureBox1.Location = new System.Drawing.Point(179, 605);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(416, 132);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1615,11 +1650,193 @@
             this.picDc.TabStop = false;
             this.picDc.Click += new System.EventHandler(this.picDc_Click);
             // 
+            // btnClear2
+            // 
+            this.btnClear2.Location = new System.Drawing.Point(76, 94);
+            this.btnClear2.Name = "btnClear2";
+            this.btnClear2.Size = new System.Drawing.Size(54, 24);
+            this.btnClear2.TabIndex = 5;
+            this.btnClear2.Text = "Clear2";
+            this.btnClear2.UseVisualStyleBackColor = true;
+            this.btnClear2.Click += new System.EventHandler(this.btnClear2_Click);
+            // 
+            // btnClear3
+            // 
+            this.btnClear3.Location = new System.Drawing.Point(136, 94);
+            this.btnClear3.Name = "btnClear3";
+            this.btnClear3.Size = new System.Drawing.Size(54, 24);
+            this.btnClear3.TabIndex = 6;
+            this.btnClear3.Text = "Clear3";
+            this.btnClear3.UseVisualStyleBackColor = true;
+            this.btnClear3.Click += new System.EventHandler(this.btnClear3_Click);
+            // 
+            // btnWriteups
+            // 
+            this.btnWriteups.Location = new System.Drawing.Point(332, 83);
+            this.btnWriteups.Name = "btnWriteups";
+            this.btnWriteups.Size = new System.Drawing.Size(80, 24);
+            this.btnWriteups.TabIndex = 7;
+            this.btnWriteups.Text = "Writeups";
+            this.btnWriteups.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox3);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox4);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox5);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox6);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox7);
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox8);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(23, 547);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(491, 68);
+            this.flowLayoutPanel4.TabIndex = 41;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 65;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(62, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 66;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(121, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 67;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(180, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 68;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(239, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 69;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(298, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 70;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(357, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 71;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // btnUpdateDisplay
+            // 
+            this.btnUpdateDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnUpdateDisplay.Location = new System.Drawing.Point(12, 180);
+            this.btnUpdateDisplay.Name = "btnUpdateDisplay";
+            this.btnUpdateDisplay.Size = new System.Drawing.Size(100, 98);
+            this.btnUpdateDisplay.TabIndex = 42;
+            this.btnUpdateDisplay.Text = "&UpdateDisplay";
+            this.btnUpdateDisplay.UseVisualStyleBackColor = false;
+            this.btnUpdateDisplay.Click += new System.EventHandler(this.btnUpdateDisplay_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(317, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(95, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(248, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "mouth =";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(248, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "defintions =";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(317, 37);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(95, 20);
+            this.textBox2.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(248, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "TradeWar =";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(317, 57);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(95, 20);
+            this.textBox3.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 732);
+            this.ClientSize = new System.Drawing.Size(1095, 749);
+            this.Controls.Add(this.btnUpdateDisplay);
+            this.Controls.Add(this.flowLayoutPanel4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.label1);
@@ -1737,6 +1954,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDc)).EndInit();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1812,7 +2037,7 @@
         private System.Windows.Forms.Button btnQNext;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnClear1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblSelected;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -1858,6 +2083,24 @@
         private System.Windows.Forms.PictureBox picDa;
         private System.Windows.Forms.PictureBox picDb;
         private System.Windows.Forms.PictureBox picDc;
+        private System.Windows.Forms.Button btnClear3;
+        private System.Windows.Forms.Button btnClear2;
+        private System.Windows.Forms.Button btnWriteups;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button btnUpdateDisplay;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
