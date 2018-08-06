@@ -1,0 +1,19 @@
+{
+  "name": "hoaxapp2",
+  "version": "1.0.0",
+  "description": "TestApp1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanifHamidi-200/HOAXApp2.git"
+  },
+  "author": "Hanif Hamidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanifHamidi-200/HOAXApp2/issues"
+  },
+  "homepage": "https://github.com/HanifHamidi-200/HOAXApp2#readme"
+}
