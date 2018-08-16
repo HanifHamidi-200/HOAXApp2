@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PROGT.exe" version="1.0.0.0" publicKeyToken="2dd374cb91b872cd" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F setsquare.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PROGT" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PROGT.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PROGT.exe" size="26080">
+      <assemblyIdentity name="PROGT" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Cqw//Jd2tJry1JmDx+KZDElqD8UpFEEyeQJlTSDsrzk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="F setsquare.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sOh28dQre8NqRjUaypVHgQUn1+qalRx2FT89GsUmU2E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PROGT.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="89318d4504a37f72ac6ca5c239f1481d8113b05b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LCExVAT3MSPZKXq5HXVW4ZsZt6C52+lipQ93/oku/rQ=</DigestValue></Reference></SignedInfo><SignatureValue>SuJclDKlNhUW9K0fecS3h4YljAsz9zJna4p8j7Zeg5qPSSlfjDMHylZGhY8XPMQwPuD4k77ailrkHuT3oPIDss5Y+yCaFBIYKVK2MTTzc+DlAvR4YINA/gx6D1yKhe0h2xBpPyfXrRNpgVRUv5nZzgTW6ysI6R7XxR3R2ePawRs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tFxza7j1/6BtoFPS0yHaQyx6tTTX5jNgaTXpPA+CcM5vNVhtpRr4VWAtjFyk+huWQmGy7Muu/ItP+WSNiIh1hh0tZ4rfVT03bXP4yRAu301pkjk9ZA5R6bh5qr43BTCF7vchNL7HgV5IOeLTZRAwxOAIhLmCffpkC8BVJz5L7d0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b4fe2e89fe770fa562e9dbb9a0b7199be156751db97a29d92331f7045431212c" Description="" Url=""><as:assemblyIdentity name="PROGT.exe" version="1.0.0.0" publicKeyToken="2dd374cb91b872cd" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1ND3FjHaMvlesNhMvYfP+qxV+Ku6EwNuBbEtHMnQkjI=</DigestValue></Reference></SignedInfo><SignatureValue>hDVNiP/5zhtTy/bLH3DyyiEBUXnCOcLlqez/NgMklla7CrKZ4uyj6BoMH8oZcmorDc/lZ36fnCcUulmdswS9fMSD78st3Ay/xgAWhbu0G1aEByjn+zWZ8JP8xdUVbXBzXfH61mc+GOsYbbRWXMkw7ciZPeOtvfjs7k1N8Z3LXuk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tFxza7j1/6BtoFPS0yHaQyx6tTTX5jNgaTXpPA+CcM5vNVhtpRr4VWAtjFyk+huWQmGy7Muu/ItP+WSNiIh1hh0tZ4rfVT03bXP4yRAu301pkjk9ZA5R6bh5qr43BTCF7vchNL7HgV5IOeLTZRAwxOAIhLmCffpkC8BVJz5L7d0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQS9Lkq0eNWo1KSBm+2CGlbjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwODEzMTUzMTExWhcNMTkwODEzMjEzMTExWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALRcc2u49f+gbaBT0tMh2kMserU01+YzYGk16TwPgnDObzVYbaUa+FVgLYxcpPoblkJhsuzLrvyLT/lkjYiIdYYdLWeK31U9N21z+MkQLt9NaZI5PWQOUem4eaq+NwUwhe73ITS+x4FeSDni02UQMMTgCIS5gn36ZAvAVSc+S+3dAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAQWlEYF1ppbrVzkcwbdzQFCWCMz7X5AjYWUvaOjG43VmmQfF7hCpWUcoZOY7ffrZxzZQLYozydMOtafZV1NZXSHilJzZLBCPu3XQZYkAlbJg4oSi2WL66wx71vqLWY3zhkBWK/AODUQNIon16xyoDBszhL7b+8owFWD7YG6g6L3Q=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

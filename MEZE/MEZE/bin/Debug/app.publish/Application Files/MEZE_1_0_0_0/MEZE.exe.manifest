@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MEZE.exe" version="1.0.0.0" publicKeyToken="c74add134274d243" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F tryseed.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MEZE" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MEZE.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MEZE.exe" size="25056">
+      <assemblyIdentity name="MEZE" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f/Z1yDiC/0hBqn+DML4nqWX27bruAyEtr0V8hSlC0Hg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="F tryseed.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c3t7FHGSPUdJ2GwKVDGzvDDwcZW6F84yxJooe1f4KZs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MEZE.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="f7e6f1206d76d04a7f5f4b4ce5e709871d06cd62" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ljxphZQJ1DbzmWO+jFs8DNSjwWH6guNFqw3qPV0j7XQ=</DigestValue></Reference></SignedInfo><SignatureValue>aShmE1xDYzY9zPMIKy7dg6XGzP5aegJXm0YbTYy5P1klGPVVc+rNxKCAdZ1yUhlnO+vQS/IupEkA/E/qiWZ6vmQdz+Dt1AoyBr/Lhs0UvQZ53eBD3wSSrWSB/uEkV4RIPda7j8+MJUBXleX2ePPne/MJG6MsPUJTPt81V0VJj30=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xpfocOfUD1iM21CmbMQYKYqWQISSEvVuwEEqyfl89XUTfIV4SvttBhaCsXkNHa2/Zm66/PWQO5yzCUv4lmwDcdqllW9sh8E3nugZOnXhzzwzVeyIptOYFSexfT5miBWO/s+Bf/7vAvAuvr94szEbJ11fX6Yol16p1NiXSVy0UEk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="74ed235d3dea0dab45e382fa61c1a3d40c3c5b8cbe6399f336d4099485693c96" Description="" Url=""><as:assemblyIdentity name="MEZE.exe" version="1.0.0.0" publicKeyToken="c74add134274d243" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>YqhM0uvM3biBx7BZq2rtvJiQgMkz52CY/K4Q4vhtK5g=</DigestValue></Reference></SignedInfo><SignatureValue>VzzBQUOm0efefknCczUYmAjs3/RkhV+SnZOyc2o+YYwcUXan51KR22+2vmnvaAbxp7j62dba/dQDcT5/htaVYMejbCstZilg+81D6LehakqzUSfK2RDJjz8MR+6qT/dOLbxlMxq8+1NkmbgarxdkXlqXgyHaGWEPpOmL2EEoInI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xpfocOfUD1iM21CmbMQYKYqWQISSEvVuwEEqyfl89XUTfIV4SvttBhaCsXkNHa2/Zm66/PWQO5yzCUv4lmwDcdqllW9sh8E3nugZOnXhzzwzVeyIptOYFSexfT5miBWO/s+Bf/7vAvAuvr94szEbJ11fX6Yol16p1NiXSVy0UEk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQNaSbe5JsX5ZDS6Fgh5LVnTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwODAyMDc1NzI5WhcNMTkwODAyMTM1NzI5WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaX6HDn1A9YjNtQpmzEGCmKlkCEkhL1bsBBKsn5fPV1E3yFeEr7bQYWgrF5DR2tv2Zuuvz1kDucswlL+JZsA3HapZVvbIfBN57oGTp14c88M1XsiKbTmBUnsX0+ZogVjv7PgX/+7wLwLr6/eLMxGyddX1+mKJdeqdTYl0lctFBJAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAvlqOQwH6iFMJA8MihXHMqLoGiUTZMqZU9XCzRfHfDIJ28oWPnoMW/wK8OwsClJ9Ft+lI2Htc2Kue4l+W6xxZi1FyisSo7Pb9/USAnK2jkwuOKG82+vIIbtdyPWeL+T5yiy1W6P/0fYWMjHAirU53KlJh3cm+nAPTT0Liq8l4G6s=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

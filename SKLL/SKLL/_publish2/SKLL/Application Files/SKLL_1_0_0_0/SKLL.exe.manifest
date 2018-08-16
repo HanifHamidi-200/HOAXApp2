@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SKLL.exe" version="1.0.0.0" publicKeyToken="faaacef69f5e27a9" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F spark.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SKLL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SKLL.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SKLL.exe" size="30688">
+      <assemblyIdentity name="SKLL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xOF8rhcoy/bGX0GOWjHGJ6WEM5ghaEknjEoyvAfmvIk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="F spark.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+EPQz208gwlcrv8qk3lmfrGWIcTsNUq2x0gU1S0rIeE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SKLL.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="221fe6920d9eb0810a2727d52854eca9c0a78df9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>UzgRLTKptUzs8kL7A3iTST2tgPblDjH0Kcz1aQNmzFU=</DigestValue></Reference></SignedInfo><SignatureValue>kdlo+WkXdmhcYGdvpoS7//2yjuYWGvBk41oR2SMOuxvgboZL2t199DnLDlzz7RWj/IEX0TnS2EDZ+HoovcLh1GmQI7WIokW/JezEVsyd8eEMQJn/Z0DkcYuT1Cy6PhXdB3cBZ1QJ8pjUQbyI1p8L+50xGCD3vFEQbSqKlb5qELs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>42aamHJJ6STPYuIUQ4RwK2bUl2mgaUfhdDLviDDQsvJe5nH9Vtpu4lezteQVLfyd60ykrsr1dId6VxkyIPRdmfSWX9kasKA8PDQasMtf4r0rd6MjJPl3lzFg8Zm5amSv0DnPrnLtzuBAry8IgMK9Yb6i5VbyBKBQowCHRAWsJoU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="55cc660369f5cc29f4310ee5f680ad3d49937803fb42f2ec4cb5a9322d113853" Description="" Url=""><as:assemblyIdentity name="SKLL.exe" version="1.0.0.0" publicKeyToken="faaacef69f5e27a9" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PvCPM0Bim4ruShlYM40jSAOZVqiJXQxzmyBey9Ge9pw=</DigestValue></Reference></SignedInfo><SignatureValue>lyyAlwOe1YYR/XwBxKpecK9iZfi1KhPbmMswTLnb1ChSC2ZA1C52fHsLLoxGrwpNq+pM6ltfbffCwcUst4xQAjxJ4e/UWbFvCyhEkrh4hS64nddsrbYH0XrNNKoJctTD/ecascj+uilsPyA9+LiFwJrkFwBuni/mpTSh4vCnNIA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>42aamHJJ6STPYuIUQ4RwK2bUl2mgaUfhdDLviDDQsvJe5nH9Vtpu4lezteQVLfyd60ykrsr1dId6VxkyIPRdmfSWX9kasKA8PDQasMtf4r0rd6MjJPl3lzFg8Zm5amSv0DnPrnLtzuBAry8IgMK9Yb6i5VbyBKBQowCHRAWsJoU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQMMQevYsYQJtEMM0QnOZ5nTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwODEyMTQzNDIyWhcNMTkwODEyMjAzNDIyWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAONmmphySekkz2LiFEOEcCtm1JdpoGlH4XQy74gw0LLyXuZx/VbabuJXs7XkFS38netMpK7K9XSHelcZMiD0XZn0ll/ZGrCgPDw0GrDLX+K9K3ejIyT5d5cxYPGZuWpkr9A5z65y7c7gQK8vCIDCvWG+ouVW8gSgUKMAh0QFrCaFAgMBAAEwDQYJKoZIhvcNAQELBQADgYEADnoYo4/z0Vx6spIvkKK/hTnQu7N6xbMhUMCe/hs5WiPFtxApspExrmi35xQcmvBde+1tOAfAtjtEfrnQYOMiXLxfa93Q07OPeIvfIVXwBMf1+K4Io3XXLrwYpW7lN9c56UN0eLkYP3fiAuXNNbRPCFMzlDAuOFeOnFFDzJqUJ+0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

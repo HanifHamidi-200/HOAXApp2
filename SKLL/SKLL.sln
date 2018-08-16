@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKLL", "SKLL\SKLL.csproj", "{C8229946-0A36-441D-B6F6-F423D3B47582}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8229946-0A36-441D-B6F6-F423D3B47582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8229946-0A36-441D-B6F6-F423D3B47582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8229946-0A36-441D-B6F6-F423D3B47582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8229946-0A36-441D-B6F6-F423D3B47582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD3D2D7A-77E9-4915-82CE-934A7BB3A1BC}
+	EndGlobalSection
+EndGlobal

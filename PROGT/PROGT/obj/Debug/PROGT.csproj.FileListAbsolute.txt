@@ -1,0 +1,14 @@
+C:\Users\hanif\source\repos\PROGT\PROGT\bin\Debug\PROGT.exe.config
+C:\Users\hanif\source\repos\PROGT\PROGT\bin\Debug\PROGT.exe.manifest
+C:\Users\hanif\source\repos\PROGT\PROGT\bin\Debug\PROGT.application
+C:\Users\hanif\source\repos\PROGT\PROGT\bin\Debug\PROGT.exe
+C:\Users\hanif\source\repos\PROGT\PROGT\bin\Debug\PROGT.pdb
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.Form1.resources
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.Properties.Resources.resources
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.exe.manifest
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.application
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.exe
+C:\Users\hanif\source\repos\PROGT\PROGT\obj\Debug\PROGT.pdb

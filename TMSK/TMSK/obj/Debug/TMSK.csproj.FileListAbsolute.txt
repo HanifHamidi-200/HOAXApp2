@@ -1,0 +1,16 @@
+C:\Users\hanif\source\repos\TMSK\TMSK\bin\Debug\TMSK.exe.config
+C:\Users\hanif\source\repos\TMSK\TMSK\bin\Debug\TMSK.exe.manifest
+C:\Users\hanif\source\repos\TMSK\TMSK\bin\Debug\TMSK.application
+C:\Users\hanif\source\repos\TMSK\TMSK\bin\Debug\TMSK.exe
+C:\Users\hanif\source\repos\TMSK\TMSK\bin\Debug\TMSK.pdb
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.Form1.resources
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.fSub1.resources
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.fSub2.resources
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.Properties.Resources.resources
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.exe.manifest
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.application
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.exe
+C:\Users\hanif\source\repos\TMSK\TMSK\obj\Debug\TMSK.pdb

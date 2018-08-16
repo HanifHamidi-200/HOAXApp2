@@ -1,0 +1,14 @@
+C:\Users\hanif\source\repos\PUNY\PUNY\bin\Debug\PUNY.exe.config
+C:\Users\hanif\source\repos\PUNY\PUNY\bin\Debug\PUNY.exe.manifest
+C:\Users\hanif\source\repos\PUNY\PUNY\bin\Debug\PUNY.application
+C:\Users\hanif\source\repos\PUNY\PUNY\bin\Debug\PUNY.exe
+C:\Users\hanif\source\repos\PUNY\PUNY\bin\Debug\PUNY.pdb
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.Form1.resources
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.Properties.Resources.resources
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.exe.manifest
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.application
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.exe
+C:\Users\hanif\source\repos\PUNY\PUNY\obj\Debug\PUNY.pdb

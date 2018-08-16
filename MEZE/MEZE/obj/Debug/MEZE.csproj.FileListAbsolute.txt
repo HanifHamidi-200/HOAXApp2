@@ -1,0 +1,14 @@
+C:\Users\hanif\source\repos\MEZE\MEZE\bin\Debug\MEZE.exe.config
+C:\Users\hanif\source\repos\MEZE\MEZE\bin\Debug\MEZE.exe.manifest
+C:\Users\hanif\source\repos\MEZE\MEZE\bin\Debug\MEZE.application
+C:\Users\hanif\source\repos\MEZE\MEZE\bin\Debug\MEZE.exe
+C:\Users\hanif\source\repos\MEZE\MEZE\bin\Debug\MEZE.pdb
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.Form1.resources
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.Properties.Resources.resources
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.exe.manifest
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.application
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.exe
+C:\Users\hanif\source\repos\MEZE\MEZE\obj\Debug\MEZE.pdb

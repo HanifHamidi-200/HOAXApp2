@@ -1,0 +1,16 @@
+C:\Users\hanif\source\repos\TAKT\TAKT\bin\Debug\TAKT.exe.config
+C:\Users\hanif\source\repos\TAKT\TAKT\bin\Debug\TAKT.exe
+C:\Users\hanif\source\repos\TAKT\TAKT\bin\Debug\TAKT.pdb
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.Form1.resources
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.fSub1.resources
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.fSub2.resources
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.Properties.Resources.resources
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.exe
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.pdb
+C:\Users\hanif\source\repos\TAKT\TAKT\bin\Debug\TAKT.exe.manifest
+C:\Users\hanif\source\repos\TAKT\TAKT\bin\Debug\TAKT.application
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.exe.manifest
+C:\Users\hanif\source\repos\TAKT\TAKT\obj\Debug\TAKT.application

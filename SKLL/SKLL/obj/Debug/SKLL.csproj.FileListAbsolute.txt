@@ -1,0 +1,17 @@
+C:\Users\hanif\source\repos\SKLL\SKLL\bin\Debug\SKLL.exe.config
+C:\Users\hanif\source\repos\SKLL\SKLL\bin\Debug\SKLL.exe
+C:\Users\hanif\source\repos\SKLL\SKLL\bin\Debug\SKLL.pdb
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.Form1.resources
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.fSub1.resources
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.fSub2.resources
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.fSub3.resources
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.Properties.Resources.resources
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.exe
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.pdb
+C:\Users\hanif\source\repos\SKLL\SKLL\bin\Debug\SKLL.exe.manifest
+C:\Users\hanif\source\repos\SKLL\SKLL\bin\Debug\SKLL.application
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.exe.manifest
+C:\Users\hanif\source\repos\SKLL\SKLL\obj\Debug\SKLL.application

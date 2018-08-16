@@ -1,0 +1,14 @@
+C:\Users\hanif\source\repos\SHSM\SHSM\bin\Debug\SHSM.exe.config
+C:\Users\hanif\source\repos\SHSM\SHSM\bin\Debug\SHSM.exe.manifest
+C:\Users\hanif\source\repos\SHSM\SHSM\bin\Debug\SHSM.application
+C:\Users\hanif\source\repos\SHSM\SHSM\bin\Debug\SHSM.exe
+C:\Users\hanif\source\repos\SHSM\SHSM\bin\Debug\SHSM.pdb
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.Form1.resources
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.Properties.Resources.resources
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.exe.manifest
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.application
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.exe
+C:\Users\hanif\source\repos\SHSM\SHSM\obj\Debug\SHSM.pdb

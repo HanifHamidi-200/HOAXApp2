@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GEOGY.exe" version="1.0.0.0" publicKeyToken="8657a80720eafb0d" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F setsquare.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GEOGY" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="GEOGY.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GEOGY.exe" size="34784">
+      <assemblyIdentity name="GEOGY" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>isMhzqL6Pj03+wo6hqM5Cd4bAfc3/lh0OWJy0R/C5Qc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="F setsquare.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sOh28dQre8NqRjUaypVHgQUn1+qalRx2FT89GsUmU2E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GEOGY.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="a3ac72bcaa82c95995affdd37a9c3fb12a12d051" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hGduaUpVtgirDNtd1/jcdkWtBqbREQl8JicjVyWk/is=</DigestValue></Reference></SignedInfo><SignatureValue>RSejYUtMxnmNuHjHSMOXsqSkOWer8QclKw3CbY2XvaPv5SOcY89kF6QBpuDde4Y3nRgKpzONrrjuZjleFjsqwFcUUv7DxFDPUPRD4EQW90+u4pn2/ZR/CIFg/tZBaWmJWUDzrcoc3aXjUImEIDEuqOMf6yHmwaCSkIZAGzTPKyk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qG7leY/KzK5KUG3aiT312VqLUWSnMvsWM3dIHUjikRBNceYxmKjSck7yau1NA4XtHR4lbBV6wF68wsUiBjQRDr+F1RGkORK47vUdP5m1mD2su6HxBxegaTqGqp7AmR6FFkSXUXu4gp8iyscZ300gn8YLMpw4G7wYpZD0aTsDOE0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2bfea425572327267c0911d1a606ad4576dcf8d75ddb0cab08b6554a696e6784" Description="" Url=""><as:assemblyIdentity name="GEOGY.exe" version="1.0.0.0" publicKeyToken="8657a80720eafb0d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rZsvJc7RAvZwwNC3CFsVdTH6hnlSvPBAT4/0vo6EBN0=</DigestValue></Reference></SignedInfo><SignatureValue>W3UUGfDOc+4f3SWY25e36dOsdcZec580lzPQvkAaG9JXwmljZjrFn5R0sRD24Tm604OMeOj7uTIyc/QbOki0AuD1LO8wno6p8pQOhdPtTmkFwj7ge2ysXUTCCUbQpEmwBTDAMfqtED/XS15AwmXopslmYDmtCcCi2Lzaq6e/2wc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qG7leY/KzK5KUG3aiT312VqLUWSnMvsWM3dIHUjikRBNceYxmKjSck7yau1NA4XtHR4lbBV6wF68wsUiBjQRDr+F1RGkORK47vUdP5m1mD2su6HxBxegaTqGqp7AmR6FFkSXUXu4gp8iyscZ300gn8YLMpw4G7wYpZD0aTsDOE0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQMdXo+JXIrYxLsT2oUj/B+jANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwODEyMTI0OTQwWhcNMTkwODEyMTg0OTQwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKhu5XmPysyuSlBt2ok99dlai1FkpzL7FjN3SB1I4pEQTXHmMZio0nJO8mrtTQOF7R0eJWwVesBevMLFIgY0EQ6/hdURpDkSuO71HT+ZtZg9rLuh8QcXoGk6hqqewJkehRZEl1F7uIKfIsrHGd9NIJ/GCzKcOBu8GKWQ9Gk7AzhNAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAgLFiOiW/W8Mt49SgPZBd5WQC94oxFEmvZ4NpVUrRt4yqaRR9VgJmDS3Lc/I5zU77ox3T1QSXZ8mS5k0Cbi95v5jCyx+deuq14ohc98XexaN83Hud7skzxJ9zacgf6IdIFQ8t21GzxF5PCw7U+Xu+JmCxdnL2VFX04XXmN4OX1ME=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

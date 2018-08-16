@@ -1,0 +1,16 @@
+C:\Users\hanif\source\repos\GEOGY\GEOGY\bin\Debug\GEOGY.exe.config
+C:\Users\hanif\source\repos\GEOGY\GEOGY\bin\Debug\GEOGY.exe
+C:\Users\hanif\source\repos\GEOGY\GEOGY\bin\Debug\GEOGY.pdb
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.Form1.resources
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.fSub1.resources
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.fSub2.resources
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.Properties.Resources.resources
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.exe
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.pdb
+C:\Users\hanif\source\repos\GEOGY\GEOGY\bin\Debug\GEOGY.exe.manifest
+C:\Users\hanif\source\repos\GEOGY\GEOGY\bin\Debug\GEOGY.application
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.exe.manifest
+C:\Users\hanif\source\repos\GEOGY\GEOGY\obj\Debug\GEOGY.application

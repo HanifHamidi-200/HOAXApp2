@@ -1,0 +1,16 @@
+C:\Users\hanif\source\repos\PROPY\PROPY\bin\Debug\PROPY.exe.config
+C:\Users\hanif\source\repos\PROPY\PROPY\bin\Debug\PROPY.exe
+C:\Users\hanif\source\repos\PROPY\PROPY\bin\Debug\PROPY.pdb
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.Form1.resources
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.fSub1.resources
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.fSub2.resources
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.Properties.Resources.resources
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.exe
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.pdb
+C:\Users\hanif\source\repos\PROPY\PROPY\bin\Debug\PROPY.exe.manifest
+C:\Users\hanif\source\repos\PROPY\PROPY\bin\Debug\PROPY.application
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.exe.manifest
+C:\Users\hanif\source\repos\PROPY\PROPY\obj\Debug\PROPY.application

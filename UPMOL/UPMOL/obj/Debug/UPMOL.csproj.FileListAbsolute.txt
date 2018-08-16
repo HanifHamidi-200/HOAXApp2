@@ -1,0 +1,17 @@
+C:\Users\hanif\source\repos\UPMOL\UPMOL\bin\Debug\UPMOL.exe.config
+C:\Users\hanif\source\repos\UPMOL\UPMOL\bin\Debug\UPMOL.exe.manifest
+C:\Users\hanif\source\repos\UPMOL\UPMOL\bin\Debug\UPMOL.application
+C:\Users\hanif\source\repos\UPMOL\UPMOL\bin\Debug\UPMOL.exe
+C:\Users\hanif\source\repos\UPMOL\UPMOL\bin\Debug\UPMOL.pdb
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.Form1.resources
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.fSub1.resources
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.fSub2.resources
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.Properties.Resources.resources
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.exe.manifest
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.application
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.exe
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.pdb
+C:\Users\hanif\source\repos\UPMOL\UPMOL\obj\Debug\UPMOL.fSub3.resources

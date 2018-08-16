@@ -1,0 +1,14 @@
+C:\Users\hanif\source\repos\JGNV\JGNV\bin\Debug\JGNV.exe.config
+C:\Users\hanif\source\repos\JGNV\JGNV\bin\Debug\JGNV.exe.manifest
+C:\Users\hanif\source\repos\JGNV\JGNV\bin\Debug\JGNV.application
+C:\Users\hanif\source\repos\JGNV\JGNV\bin\Debug\JGNV.exe
+C:\Users\hanif\source\repos\JGNV\JGNV\bin\Debug\JGNV.pdb
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.Form1.resources
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.Properties.Resources.resources
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.exe.manifest
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.application
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.exe
+C:\Users\hanif\source\repos\JGNV\JGNV\obj\Debug\JGNV.pdb

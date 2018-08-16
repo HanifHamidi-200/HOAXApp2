@@ -1,0 +1,14 @@
+C:\Users\hanif\source\repos\ATOLD\ATOLD\bin\Debug\ATOLD.exe.config
+C:\Users\hanif\source\repos\ATOLD\ATOLD\bin\Debug\ATOLD.exe
+C:\Users\hanif\source\repos\ATOLD\ATOLD\bin\Debug\ATOLD.pdb
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.csprojAssemblyReference.cache
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.Form1.resources
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.Properties.Resources.resources
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.csproj.GenerateResource.cache
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.exe
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.pdb
+C:\Users\hanif\source\repos\ATOLD\ATOLD\bin\Debug\ATOLD.exe.manifest
+C:\Users\hanif\source\repos\ATOLD\ATOLD\bin\Debug\ATOLD.application
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.exe.manifest
+C:\Users\hanif\source\repos\ATOLD\ATOLD\obj\Debug\ATOLD.application
