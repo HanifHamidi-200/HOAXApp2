@@ -43,5 +43,12 @@ namespace DATB
             _dlg.ShowDialog();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            fPasscodes _dlg = new fPasscodes();
+            _dlg.ShowDialog();
+
+        }
     }
 }

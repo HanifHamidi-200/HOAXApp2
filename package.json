@@ -1,7 +1,7 @@
 {
   "name": "hoaxapp2",
   "version": "1.0.0",
-  "description": "TestApp1",
+  "description": "Mainstem Program",
   "main": "add.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,15 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/HanifHamidi-200/HOAXApp2.git"
   },
-  "dependencies":{
-    "express":"*",
-    "body-parser":"*"
-  },
-
   "author": "Hanif Hamidi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HanifHamidi-200/HOAXApp2/issues"
   },
-  "homepage": "https://github.com/HanifHamidi-200/HOAXApp2#readme"
+  "homepage": "https://github.com/HanifHamidi-200/HOAXApp2#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

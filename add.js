@@ -1,15 +1,40 @@
-const http = require('http');
+var express=require('express');
+var bodyParser=require('body-parser');
+var path=require('path');
 
-const hostname = '127.0.0.1';
-const port = 3000;
+var app=express();
 
-const server = http.createServer((req, res) =>{
-    res.statusCode = 200;
-    res.setHeader('Content-type', 'text/plain');
-    res.write("index.html");
-    res.end('Hello World!');
-})
 
-server.listen(port, hostname, () => {
-    console.log('Server started on port' +port);
-});
+    app.set('view engine','ejs');
+    app.set('views,path.join(__dirname','views');
+
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({extended: false}));
+
+    app.use(express.static(path.join(__dirname,'public')));
+
+    var people=[
+        {
+            name:'Jeff',
+            age:30
+        },
+        {
+            name:'Sara',
+            age:22
+            
+        },
+        {
+            name:'Bill',
+            age:40
+       
+        }
+    ]
+    app.get("/", function(req,res){
+       // res.render('index');
+        res.json(people);
+    })
+
+    app.listen(3000, function(){
+        console.log('Server started on port 3000...');
+    })
+    
